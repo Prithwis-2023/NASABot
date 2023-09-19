@@ -1,0 +1,32 @@
+html{
+    min-width: 100%;
+    overflow-x: hidden;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+html::-webkit-scrollbar {
+      width: 10px; 
+}
+
+html::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: blue;
+    border-radius: 25px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg {
+    background-image: "static/galaxy.jpg";
+}
