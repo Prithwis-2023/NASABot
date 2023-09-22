@@ -14,6 +14,11 @@ def index():
 def apod():
 	return render_template("apod.html")
 
+@app.route('/earth')
+
+def earth():
+	return render_template("earth.html")
+
 @app.route('/neo')
 
 def neo():

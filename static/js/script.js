@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
             // Redirect to the apod.html page
             window.location.href = '/apod';
             
-        } else if (selectedValue === 'neo') {
+        } else if (selectedValue === 'earth') {
             // Redirect to another page for 'neo' (adjust the URL as needed)
-            window.location.href = '/neo';
+            window.location.href = '/earth';
 
         } else if (selectedValue === 'exoplanets') {
             // Redirect to another page for 'exoplanets' (adjust the URL as needed)

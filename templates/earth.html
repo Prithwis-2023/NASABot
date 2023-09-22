@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Earth
+{% endblock %}
+
+{% block main %}
+    <script src="/static/js/earth.js"></script>
+    <div class="input-group">
+        <span class="input-group-text">Lat. and Lon.</span>
+        <input type="text" aria-label="Latitude" class="form-control" id ="lat" required>
+        <input type="text" aria-label="Longitude" class="form-control" id="lon" required>
+    </div>
+{% endblock %}
