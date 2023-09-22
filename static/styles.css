@@ -1,0 +1,68 @@
+html{
+    min-width: 100%;
+    overflow-x: hidden;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html::-webkit-scrollbar {
+      width: 10px; 
+}
+
+html::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: blue;
+    border-radius: 25px;
+}
+
+body {
+    background-image: url('/static/galaxy.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.card {
+    width: 1000px;
+    height: fit-content;
+    margin: 0 auto;
+    background-color: #023252;
+    border-radius: 10px;
+    z-index: 1;
+}
+  
+.tools {
+display: flex;
+align-items: center;
+padding: 9px;
+}
+
+.circle {
+padding: 0 4px;
+}
+
+.box {
+display: inline-block;
+align-items: center;
+width: 10px;
+height: 10px;
+padding: 1px;
+border-radius: 50%;
+}
+
+.red {
+background-color: #ff605c;
+}
+
+.yellow {
+background-color: #ffbd44;
+}
+
+.green {
+background-color: #00ca4e;
+}
+  
