@@ -1,19 +1,17 @@
-const submitButton = document.getElementById("submit");
-const input = document.querySelector('#inputGroupSelect04');
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('#submit').addEventListener('click', function() {
+        var selectedValue = document.querySelector('#inputGroupSelect04').value;
+        if (selectedValue === 'apod') {
+            // Redirect to the apod.html page
+            window.location.href = '/apod';
+            
+        } else if (selectedValue === 'neo') {
+            // Redirect to another page for 'neo' (adjust the URL as needed)
+            window.location.href = '/neo';
 
-// Add a click event listener to the button
-submitButton.addEventListener("click", function() {
-    // Get the selected query from the dropdown
-    const selectedQuery = input.value;
-
-    // Define the URL for the new HTML page based on the selected query
-    let newPageUrl = "";
-
-    // Handle different query options
-    switch (selectedQuery) {
-        case "apod":
-            window.location.href = "/templates/apod.html"; // Replace with the actual URL for the APOD page
-            break;
-        // Add cases for other query options here
-    }
+        } else if (selectedValue === 'exoplanets') {
+            // Redirect to another page for 'exoplanets' (adjust the URL as needed)
+            window.location.href = '/exoplanets';
+        }
+    });
 });

@@ -14,5 +14,17 @@ def index():
 def apod():
 	return render_template("apod.html")
 
+@app.route('/neo')
+
+def neo():
+	return render_template("neo.html")
+
+@app.route('/exoplanets')
+
+def exoplanets():
+	return render_template("exoplanets.html")
+
+
+
 if __name__ == '__main__':
 	app.run()

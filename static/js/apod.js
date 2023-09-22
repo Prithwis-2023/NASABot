@@ -5,11 +5,12 @@ var api_key = "svyPAHaHfTxd2ReJfyk1jIWJAjUD0T0m5cdN6ZHE";
 req.open("GET", url + api_key);
 req.send();
 
-if(req.status == 200 && req.readyState == 4){
-    var response = JSON.parse(req.responseText);
-    document.getElementById("title").textContent = response.title;
-    document.getElementById("date").textContent = response.date;
-    document.getElementById("pic").src = response.hdurl;
-    document.getElementById("explanation").textContent = response.explanation;
-}   
-   
+req.addEventListener("load", function(){
+    if(req.status == 200 && req.readyState == 4){
+        var response = JSON.parse(req.responseText);
+        document.getElementById("title").textContent = response.title;
+        document.getElementById("date").textContent = response.date;
+        document.getElementById("pic").src = response.hdurl;
+        document.getElementById("explanation").textContent = response.explanation;
+    }   
+});   
