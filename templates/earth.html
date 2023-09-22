@@ -6,9 +6,12 @@
 
 {% block main %}
     <script src="/static/js/earth.js"></script>
-    <div class="input-group">
-        <span class="input-group-text">Lat. and Lon.</span>
-        <input type="text" aria-label="Latitude" class="form-control" id ="lat" required>
-        <input type="text" aria-label="Longitude" class="form-control" id="lon" required>
+    <div class="row">
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Latitude" aria-label="Latitude" id="lat" required>
+        </div>
+         <div class="col">
+            <input type="text" class="form-control" placeholder="Longitude" aria-label="Longitude" id="lon" required>
+        </div>
     </div>
 {% endblock %}
