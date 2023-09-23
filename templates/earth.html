@@ -6,12 +6,28 @@
 
 {% block main %}
     <script src="/static/js/earth.js"></script>
+     <!-- Required input -->
     <div class="row">
         <div class="col">
-            <input type="text" class="form-control" placeholder="Latitude" aria-label="Latitude" id="lat" required>
+            <input type="number" class="form-control" placeholder="Latitude" aria-label="Latitude" id="lat" required>
         </div>
-         <div class="col">
-            <input type="text" class="form-control" placeholder="Longitude" aria-label="Longitude" id="lon" required>
+        <div class="col">
+            <input type="number" class="form-control" placeholder="Longitude" aria-label="Longitude" id="lon" required>
         </div>
     </div>
+     <!-- Optional input -->
+    <div style="padding-top:12px;">
+        <div class="row">
+            <div class="col">
+                <input type="number" class="form-control" placeholder="Dimension" aria-label="Dimension" id="dim">
+            </div>
+            <div class="col">
+                <input type="date" class="form-control" placeholder="Date" aria-label="Date" id="date">
+            </div>
+        </div>    
+    </div>
+    </div>
+    <div style="padding-top: 10px; padding-bottom: 10px;">
+        <button type="submit" class="btn btn-success btn-lg" id="search">Search</button>
+    </div> 
 {% endblock %}
