@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Mars
+{% endblock %}
+
+{% block main %}
+    <script src="/static/js/mars.js"></script>
+     <!-- Required input -->
+    <div class="form-floating mb-3" style="width: 500px;">
+        <input autocomplete="off" type="number" autofocus class="form-control" name="sol" placeholder="Sol" id="sol">
+        <label for="sol">Sol</label>
+    </div>    
+    <div class="form-floating" style="width: 500px;">     
+        <select class="form-select" id="camera" aria-label="Floating label select example" required>
+            <option selected>Choose</option>
+            <option value="fhaz">FHAZ</option>
+            <option value="rhaz">RHAZ</option>
+            <option value="mast">MAST</option>
+            <option value="chemcam">CHEMCAM</option>
+            <option value="mahli">MAHLI</option>
+            <option value="mardi">MARDI</option>
+            <option value="navcam">NAVCAM</option>
+        </select>
+        <label for="floatingSelect">Camera</label>
+    </div>
+
+    <div style="padding-top: 10px; padding-bottom: 10px;">
+        <button type="submit" class="btn btn-success btn-lg" id="search">Search</button>
+    </div> 
+    <hr>
+    <h3 id="image"></h3>
+{% endblock %}

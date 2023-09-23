@@ -10,7 +10,7 @@ api_key = "svyPAHaHfTxd2ReJfyk1jIWJAjUD0T0m5cdN6ZHE"
 
 nasa = Client(api_key)
 
-pprint.pprint(nasa.apod())
+print(nasa.mars_rovers(1000)['photos'][0]['img_src'])
 
 
 '''

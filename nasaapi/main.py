@@ -101,7 +101,7 @@ class Client():
         return load(requests.get('https://api.nasa.gov/insight_weather/?api_key=' + self.api_key + '&feedtype=json&ver=1.0').text)
 
     def mars_rovers(self, sols=random(0, 2000), camera="fhaz"):
-        return MarsRovers(self.api_key, sols, camera)
+        return load(requests.get('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=' + str(sols) + '&camera=' + camera + '&api_key=' + self.api_key).text)
 
     def techport(self, id):
         try:

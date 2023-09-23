@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
             // Redirect to another page for 'neo' (adjust the URL as needed)
             window.location.href = '/earth';
 
-        } else if (selectedValue === 'exoplanets') {
+        } else if (selectedValue === 'mars') {
             // Redirect to another page for 'exoplanets' (adjust the URL as needed)
-            window.location.href = '/exoplanets';
+            window.location.href = '/mars-rover';
         }
     });
 });

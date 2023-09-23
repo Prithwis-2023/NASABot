@@ -19,10 +19,10 @@ def apod():
 def earth():
 	return render_template("earth.html")
 
-@app.route('/neo')
+@app.route('/mars-rover')
 
-def neo():
-	return render_template("neo.html")
+def mars_rover():
+	return render_template("mars.html")
 
 @app.route('/exoplanets')
 
