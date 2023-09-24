@@ -10,7 +10,12 @@ req.addEventListener("load", function(){
         var response = JSON.parse(req.responseText);
         document.getElementById("title").textContent = response.title;
         document.getElementById("date").textContent = response.date;
-        document.getElementById("pic").src = response.hdurl;
+        if (response.media_type === 'image'){
+            document.getElementById("pic").src = response.hdurl;
+        }
+        else if (response.media_type === 'video') {
+            document.getElementById("vid").src = response.url;
+        }
         document.getElementById("explanation").textContent = response.explanation;
     }   
 });   

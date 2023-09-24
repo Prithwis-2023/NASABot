@@ -43,7 +43,7 @@ req.onreadystatechange = function() {
 
                 // For demonstration, you can display the first image
                 if (imageUrls.length > 0) {
-                    imageElement.src = imageUrls[0];
+                    document.getElementById("imageElement").src = imageUrls[0];
                 } else {
                     alert('No image URLs found in the response.');
                 }
