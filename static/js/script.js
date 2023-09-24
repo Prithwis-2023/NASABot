@@ -4,7 +4,11 @@ document.addEventListener('DOMContentLoaded', function() {
         if (selectedValue === 'apod') {
             // Redirect to the apod.html page
             window.location.href = '/apod';
-            
+        
+        } else if (selectedValue === 'search') {
+            // Redirect to another page for 'neo' (adjust the URL as needed)
+            window.location.href = '/';    
+        
         } else if (selectedValue === 'earth') {
             // Redirect to another page for 'neo' (adjust the URL as needed)
             window.location.href = '/earth';
