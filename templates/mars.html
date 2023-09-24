@@ -8,7 +8,7 @@
     <script src="/static/js/mars.js"></script>
      <!-- Required input -->
     <div class="form-floating mb-3" style="width: 500px;">
-        <input autocomplete="off" type="number" autofocus class="form-control" name="sol" placeholder="Sol" id="sol">
+        <input id="sol" autocomplete="off" type="number" autofocus class="form-control" name="sol" placeholder="Sol">
         <label for="sol">Sol</label>
     </div>    
     <div class="form-floating" style="width: 500px;">     
@@ -22,12 +22,12 @@
             <option value="mardi">MARDI</option>
             <option value="navcam">NAVCAM</option>
         </select>
-        <label for="floatingSelect">Camera</label>
+        <label for="camera">Camera</label>
     </div>
 
     <div style="padding-top: 10px; padding-bottom: 10px;">
         <button type="submit" class="btn btn-success btn-lg" id="search">Search</button>
     </div> 
     <hr>
-    <img src="" id="imageElement" alt="" width="100%">
+    <img src="" id="image" alt="" width="100%">
 {% endblock %}
