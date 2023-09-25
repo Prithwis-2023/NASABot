@@ -10,7 +10,10 @@ api_key = "svyPAHaHfTxd2ReJfyk1jIWJAjUD0T0m5cdN6ZHE"
 
 nasa = Client(api_key)
 
-print(nasa.mars_rovers(1000)['photos'][0]['img_src'])
+l = len(nasa.epic())
+for i in range(l):
+    print(nasa.epic()[i]['image'])
+
 
 
 '''

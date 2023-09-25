@@ -97,6 +97,9 @@ class Client():
         except:
             return None
 
+    def epic(self):
+        return load(requests.get('https://api.nasa.gov/EPIC/api/natural/date/2019-05-30?api_key=' + self.api_key).text)
+    
     def insight(self):
         return load(requests.get('https://api.nasa.gov/insight_weather/?api_key=' + self.api_key + '&feedtype=json&ver=1.0').text)
 
