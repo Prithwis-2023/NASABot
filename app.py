@@ -29,6 +29,10 @@ def mars_rover():
 def exoplanets():
 	return render_template("exoplanets.html")
 
+@app.route('/epic')
+
+def epic():
+	return render_template("epic.html")
 
 
 if __name__ == '__main__':

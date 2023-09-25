@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    EPIC
+{% endblock %}
+
+{% block main %}
+    <script src="/static/js/epic.js"></script>
+    <div class="form-floating mb-3" style="width: 500px;">
+        <input type="date" class="form-control" id="epic_date" placeholder="MM/DD/YYYY" required>
+        <label for="epic_date">Date</label>
+    </div>
+    <div style="padding-top: 10px; padding-bottom: 10px;">
+        <button type="submit" class="btn btn-success btn-lg" id="search">Search</button>
+    </div> 
+    <hr>
+    <img src="" id="image" alt="" width="100%">
+{% endblock %}

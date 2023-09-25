@@ -16,6 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (selectedValue === 'mars') {
             // Redirect to another page for 'exoplanets' (adjust the URL as needed)
             window.location.href = '/mars-rover';
+        
+        } else if (selectedValue === 'epic') {
+            window.location.href = '/epic';
         }
     });
 });
