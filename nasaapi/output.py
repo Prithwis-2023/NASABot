@@ -10,9 +10,8 @@ api_key = "svyPAHaHfTxd2ReJfyk1jIWJAjUD0T0m5cdN6ZHE"
 
 nasa = Client(api_key)
 
-l = len(nasa.epic())
-for i in range(l):
-    print(nasa.epic()[i]['image'])
+
+print(nasa.epic()[0]['coords'])
 
 
 

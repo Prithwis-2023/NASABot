@@ -30,14 +30,38 @@ document.addEventListener('DOMContentLoaded', function() {
                 var response = JSON.parse(req.responseText);
 
                 const slidesContainer = document.getElementById('container');
+                const indicatorsContainer =document.getElementById('indicators');
                 const imageUrls = [];
                 for (let i = 0; i < response.length; i++) 
                 {
                     imgUrl = 'https://api.nasa.gov/EPIC/archive/natural/' + responseDate + '/png/' + response[i].image + '.png?api_key=' + api_key;
-                    imageUrls.push(imgUrl);
+                    imageUrls.push(imgUrl);                
                 }
-                console.log(imageUrls);
+                //console.log(imageUrls);
                 slidesContainer.innerHTML = ''; // Clear previous slides
+
+                // Create a new button element
+                var button0 = document.createElement("button");
+                button0.setAttribute("type", "button");
+                button0.setAttribute("data-bs-target", "#carouselExampleIndicators");
+                button0.setAttribute("data-bs-slide-to", 0);
+                button0.className = "active";
+                button0.setAttribute("aria-current", "true");
+                button0.setAttribute("aria-label", "Slide 1");                
+                indicatorsContainer.appendChild(button0);
+
+                for (let i = 1; i < response.length; i++)
+                {
+                    // Create a new button element
+                    var button = document.createElement("button");
+                    button.setAttribute("type", "button");
+                    button.setAttribute("data-bs-target", "#carouselExampleIndicators");
+                    button.setAttribute("data-bs-slide-to", i);
+                    button.setAttribute("aria-current", "true");
+                    button.setAttribute("aria-label", "Slide " + (i + 1));
+                    indicatorsContainer.appendChild(button);
+                }
+                console.log(indicatorsContainer);                                    
 
                 const slide2 = document.createElement('div');
                 slide2.className = 'carousel-item active';
