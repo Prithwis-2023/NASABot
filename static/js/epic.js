@@ -28,9 +28,37 @@ document.addEventListener('DOMContentLoaded', function() {
         req.addEventListener("load", function(){
             if(req.status == 200 && req.readyState == 4){
                 var response = JSON.parse(req.responseText);
-                imgUrl = 'https://api.nasa.gov/EPIC/archive/natural/' + responseDate + '/png/' + response[0].image + '.png?api_key=' + api_key;
-                document.querySelector('#image').src = imgUrl;
-            }
+
+                const slidesContainer = document.getElementById('container');
+                const imageUrls = [];
+                for (let i = 0; i < response.length; i++) 
+                {
+                    imgUrl = 'https://api.nasa.gov/EPIC/archive/natural/' + responseDate + '/png/' + response[i].image + '.png?api_key=' + api_key;
+                    imageUrls.push(imgUrl);
+                }
+                console.log(imageUrls);
+                slidesContainer.innerHTML = ''; // Clear previous slides
+
+                const slide2 = document.createElement('div');
+                slide2.className = 'carousel-item active';
+                const img2 =document.createElement('img');
+                img2.className = 'd-block w-100';
+                img2.src =imageUrls[0];
+                slide2.appendChild(img2);
+                slidesContainer.appendChild(slide2);
+
+                for (let i = 1; i < imageUrls.length; i++)
+                {
+                        const slide = document.createElement('div');
+                        slide.className = 'carousel-item';
+                        const img = document.createElement('img');
+                        img.className ='d-block w-100';
+                        img.src = imageUrls[i];
+                        slide.appendChild(img);
+                        slidesContainer.appendChild(slide);
+                }
+                console.log(slidesContainer);
+            }    
         });
     });
 });    
