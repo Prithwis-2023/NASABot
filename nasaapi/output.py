@@ -11,7 +11,7 @@ api_key = "svyPAHaHfTxd2ReJfyk1jIWJAjUD0T0m5cdN6ZHE"
 nasa = Client(api_key)
 
 
-print(nasa.epic()[0]['coords'])
+print(nasa.image('nebula')['collection']['items'])
 
 
 

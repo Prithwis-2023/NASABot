@@ -91,6 +91,9 @@ class Client():
     def earth(self, lat, lon, date):
         return load(requests.get('https://api.nasa.gov/planetary/earth/assets?lon=' + str(lon) + '&lat=' + str(lat) + '&date=' + str(date) + '&&dim=0.10&api_key=' + self.api_key).text)
 
+    def image(self, query):
+        return load(requests.get('https://images-api.nasa.gov/search?q=' + str(query)).text)
+    
     def earth_image(self, lat, lon, date):
         try:
             load(requests.get('https://api.nasa.gov/planetary/earth/assets?lon=' + str(lon) + '&lat=' + str(lat) + '&date=' + str(date) + '&&dim=0.10&api_key=' + self.api_key).text).url
