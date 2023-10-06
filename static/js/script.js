@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         } else if (selectedValue === 'epic') {
             window.location.href = '/epic';
+        
+        } else if (selectedValue === 'library') {
+            window.location.href = '/library';
         }
     });
 });

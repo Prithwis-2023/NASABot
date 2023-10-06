@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Media Library
+{% endblock %}
+
+{% block main %}
+    <script src="/static/js/library.js"></script>
+    <div class="input-group mb-3" style="width: 600px;">
+        <input type="input" class="form-control" placeholder="Query" aria-label="" aria-describedby="button-addon2" id="search">
+        <button  type="submit" id="button" class="btn btn-success">Search</button>
+    </div>
+    <hr>
+    <div id="container"></div>
+{% endblock %}

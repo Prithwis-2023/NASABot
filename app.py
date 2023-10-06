@@ -33,6 +33,10 @@ def exoplanets():
 def epic():
 	return render_template("epic.html")
 
+@app.route('/library')
+
+def lib():
+	return render_template('library.html')
 
 if __name__ == '__main__':
 	app.run(debug=True)
