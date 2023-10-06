@@ -1,5 +1,10 @@
 # NASABot
 
+Our problem: The issue with our NASA data is that often it can be challenging to access for many coupled with mountains of data that can be time consuming to comb through. 
+
+Our objectives: Our web application called NASABot is designed to make accessing data quick and easy especially as well as convenient with simple prompts and selections. A good example is 
+
+
 This program is designed to work very similar to an internet search engine.
 
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/772d4f08-eaeb-466d-b134-0684eefed710)
@@ -22,3 +27,6 @@ The "Mars rover Photos option" will give you a prompt that will require the sol 
 
 
 FInally when selecting the "Exoplant Archive", you obtain a 
+
+
+Conclusion: In summary, our web application is designed to make NASA data and imagery easily accessible to the masses with a user friendly prompt
