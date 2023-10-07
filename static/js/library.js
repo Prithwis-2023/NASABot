@@ -24,14 +24,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 for (let i = 0; i < filtered.length; i++)
                 {
                     console.log(filtered[i].data[0].description);
-                    var img_json = response['collection']['items'][i].href;
+                    //var img_json = response['collection']['items'][i].href;
 
                     var text = document.createElement("p");
                     text.setAttribute("id", "description")
-                    container.appendChild(text)
-                    document.getElementById('description').textContent = filtered[i].data[0].description; 
+                    container.appendChild(text);
+                    
                     var hr = document.createElement("hr");
                     container.appendChild(hr);
+                    document.getElementById('description').textContent = filtered[i].data[0].description; 
+                    console.log(i);
                     //console.log(img_json);
                     /*resp.open("GET", img_json);
                     resp.send();
@@ -55,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         }
                     });  */      
                 }
+                console.log(container);
             }    
         });    
     });    

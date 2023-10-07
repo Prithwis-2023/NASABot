@@ -38,5 +38,11 @@ def epic():
 def lib():
 	return render_template('library.html')
 
+@app.route('/trek')
+
+def trek():
+	return render_template('trek.html')
+
+
 if __name__ == '__main__':
 	app.run(debug=True)
