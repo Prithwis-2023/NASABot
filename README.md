@@ -111,15 +111,18 @@ Selecting "Astronomy Picture of the Day" in the drop-down menu and selecting Sub
 
 When selecting "Earth Polychromatic Imaging Camera (EPIC)" in the drop-down menu and pressing submit, you get a second prompt asking for a date. You can either type or select a date from the calendar and once you press search, you get a full list of photos from the EPIC from that particular date. EPIC provides full-color high-definition photos of the earth's day side from Lagrange 1 orbit.
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/4f9d711d-7243-4d5d-beec-4f6dd5d4a151)
+On the side of each image, there are arrows that allow you to change the image to a different part of the earth's surface. Selecting the left arrow with give a view of earth shifted to the west and vice versa for the right arrow. 
 
 
-Submitting the "earth-based imagery" option will give you a prompt for entering the latitude, longitude, dimension, and date. Enter the respective information and you will obtain top-down imagery of the location specified by the latitude and longitude coordinates on that date. This application can be very useful for individuals looking to find land use or geography data over time such as the shifting landscape or to monitor progress on a construction site. 
+Submitting the "earth-based imagery" option will give you a prompt for entering the latitude, longitude, dimension, and date. Enter the respective information and you will obtain top-down imagery of the location specified by the latitude and longitude coordinates on that date.
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/27ba5cac-c1db-4e9f-9bc0-4a0b11f75de4)
+Some possible uses of this program can be for individuals looking to find land use or geography data over time such as the shifting landscape or to monitor progress on a construction site. 
 
 
 The "Mars rover Photos option" will give you a prompt that will require the sol or day on Mars and a selection of camera options. Sol represents martian days that the Curiosity rover has been on Mars and a number can be entered to select the exact day that the photos are taken. The select camera allows the user to find the image based on the camera used on the Curiosity rover to take the image. 
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/78f0751c-48c0-4773-abd4-4d3733b92d41)
 Note that on some sols, the selected camera is not used which will not provide an image for the prompt. As a result, the prompt will only provide a blank display. 
+
 
 Utilizing the "Trek Map" option, you will be taken to an application that allows top down browsing of a selected celestial body
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/951c8ed6-ddc4-45e4-b1dd-8e0a779bca12)
