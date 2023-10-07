@@ -32,7 +32,12 @@ In addition, the reproducibility of the data is also taken into consideration.
 
 Our web application called OpenScientia is designed to make accessing data quick and easy especially as well as convenient with simple prompts and selections. A good example is 
 
-1. To 
+1. To increase accessibility, inclusivity and reproducibility of NASA science 
+2. To ensure easy and quick access to NASA's data
+3. To advance scientific research and innovation
+4. To promote collaboration and knowledge sharing
+5. To contribute to the Sustainable Development Goals, particularly SDG 4: Quality Education
+
 
 
 ## How does it work?
