@@ -100,7 +100,7 @@ Over $464 billion is the current market worth of the global space business, and 
 
 ## How does it work?
 
-***Main Screen***
+***Main Screen:***
 This program is designed to work very similar to an internet search engine. To simplify the search process, clicking on the search bar will open the drop down menu where the user can select the desired type of data they want.
 
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/d03a82af-a6c9-46c0-b0ac-ecdec6e3a2be)
