@@ -20,8 +20,9 @@ Besides that, the issue regarding inclusivity shall also be highlighted. Oftenti
 In addition, the reproducibility of the data is also taken into consideration. 
 
 
-***
-Our objectives: Our web application called NASABot is designed to make accessing data quick and easy especially as well as convenient with simple prompts and selections. A good example is 
+##Our objectives
+
+Our web application called NASABot is designed to make accessing data quick and easy especially as well as convenient with simple prompts and selections. A good example is 
 
 
 This program is designed to work very similar to an internet search engine.
