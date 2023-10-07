@@ -8,6 +8,7 @@ req.send();
 req.addEventListener("load", function(){
     if(req.status == 200 && req.readyState == 4){
         var response = JSON.parse(req.responseText);
+        console.log(response)
         document.getElementById("title").textContent = response.title;
         document.getElementById("date").textContent = response.date;
         if (response.media_type === 'image'){

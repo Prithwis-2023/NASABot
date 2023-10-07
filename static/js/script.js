@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         } else if (selectedValue === 'library') {
             window.location.href = '/library';
+            
+        } else if (selectedValue === 'neows') {
+            window.location.href = '/neows'
         }
     });
 });

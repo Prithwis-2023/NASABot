@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    NeoWs
+{% endblock %}
+
+{% block main %}
+    <script src="/static/js/neows.js"></script>
+    <h1>Near Earth Objects</h1>
+    <div style="height:10%;align-items: center;justify-content: center;display: flex;flex-direction: row;" >
+        <button style="width: 10%;"  id="prev" class="btn btn-outline-success btn-sm" onclick="prevpage()">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>  
+        </button>
+        <h8 style="display: inline;width: 20%;">
+            page <h8 style="display: inline;" id="page"></h8> of <h8 style="display: inline;" id="total_page"></h8>
+        </h8>
+        <button style="width: 10%;"  id="next" class="btn btn-outline-success btn-sm" onclick="nextpage()">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>  
+        </button>
+    </div>
+    <table style="margin-top: 3%;" id="near_earth_object_table">
+        <thread>
+            <tr>
+                <th id="table_name_header">Name</th>
+                <th id="table_id_header">ID</th>
+                <th id="table_neo_id_header">Neo Reference Id</th>
+            </tr>
+        </thread>
+    </table>
+    
+{% endblock %}
