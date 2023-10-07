@@ -41,7 +41,7 @@ Our web application called OpenScientia is designed to make accessing data quick
 ## Market analysis
 
 ***Market size:***
-Over $350 billion is the current market worth of the global space business, and due to rising government and private sector initiatives, there is substantial room for expansion.
+Over $464 billion is the current market worth of the global space business, and due to rising government and private sector initiatives, there is substantial room for expansion.
 
 
 ***Target audience:***
