@@ -129,8 +129,9 @@ Note that on some sols, the selected camera is not used which will not provide a
 
 
 ***Trek Map:***
-Utilizing this option, you will be taken to an application that allows top down browsing of a selected celestial body
+Utilizing this option, you will be taken to an application that allows top down browsing of a selected celestial body's surface very much like the maps application on most smart devices
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/951c8ed6-ddc4-45e4-b1dd-8e0a779bca12)
+_Mercury's surface shown with the various options to fine tune the data_
 
 
 ***Exoplanet Archive:***
