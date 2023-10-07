@@ -103,7 +103,7 @@ Over $464 billion is the current market worth of the global space business, and 
 ## How does it work?
 
 ***Main Screen:***
-This program is designed to work very similar to an internet search engine. To simplify the search process, clicking on the search bar will open the drop down menu where the user can select the desired type of data they want.
+This program is designed to work very similar to an internet search engine. To simplify the search process, clicking on the search bar will open the drop-down menu where the user can select the desired type of data they want.
 
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/d03a82af-a6c9-46c0-b0ac-ecdec6e3a2be)
 
@@ -126,31 +126,31 @@ When selecting this option, you get a second prompt asking for a date. You can e
 
 _Prompt screen for the EPIC option_
 
-On the side of each image, there are arrows that allow you to change the image to a different part of the earth's surface. Selecting the left arrow with give a view of earth shifted to the west and vice versa for the right arrow. EPIC provides full-color high-definition photos of the earth's day side from Lagrange 1 orbit. 
+On the side of each image, there are arrows that allow you to change the image to a different part of the earth's surface. Selecting the left arrow with give a view of the earth shifted to the west and vice versa for the right arrow. EPIC provides full-color high-definition photos of the earth's day side from Lagrange 1 orbit. 
 
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/3ec213cd-4383-4ccb-9e33-85419521b761)
 
 _Example of the type of images taken from EPIC that can be displayed_
 
 
-***earth-based imagery:***
+***Earth-based imagery:***
 Submitting this option will give you a prompt for entering the latitude, longitude, dimension, and date. Enter the respective information and you will obtain top-down imagery of the location specified by the latitude and longitude coordinates on that date.
 
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/27ba5cac-c1db-4e9f-9bc0-4a0b11f75de4)
 
-_The prompt screen for earth based imagery_
+_The prompt screen for earth-based imagery_
 
 
 ***Mars rover Photos:***
-This prompt that will require the sol or day on Mars and a selection of camera options. Sol represents martian days that the Curiosity rover has been on Mars and a number can be entered to select the exact day that the photos are taken. The select camera allows the user to find the image based on the camera used on the Curiosity rover to take the image. 
+This prompt will require the sol or day on Mars and a selection of camera options. Sol represents the martian days that the Curiosity rover has been on Mars and a number can be entered to select the exact day that the photos are taken. The select camera allows the user to find the image based on the camera used on the Curiosity rover to take the image. 
 
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/78f0751c-48c0-4773-abd4-4d3733b92d41)
 
-_Selection screen for access mars rover photos. Note that on some sols, the selected camera is not used which will not provide an image for the prompt. As a result, the prompt will only provide a blank display_ 
+_Selection screen for access to Mars rover photos. Note that on some sols, the selected camera is not used which will not provide an image for the prompt. As a result, the prompt will only provide a blank display_ 
 
 
 **Martian weather update:***
-When selecting this option, the program will return the current weather in gale crater on mars that is measured by the mars curoisity rover. The weather from the past 7 sols on mars as well at the earth date equivalent will also be displayed below the current wather data. The Temperature measurement can also be changed between fahrenheit and celsius by clicking on F or C next to the current high and low temperatures. 
+When selecting this option, the program will return the current weather in Gale Crater on Mars which is measured by the Mars Curiosity rover. The weather from the past 7 sols on Mars as well as the Earth date equivalent will also be displayed below the current weather data. The Temperature measurement can also be changed between Fahrenheit and Celsius by clicking on F or C next to the current high and low temperatures. 
 
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/7120fec6-4498-433b-bde8-7e7dc96813b4)
 
@@ -158,15 +158,15 @@ _Weather data display screen example_
 
 
 ***Trek Map:***
-Utilizing this option, you will be taken to an application that allows top down browsing of a selected celestial body's surface very much like the maps application on most smart devices
+Utilizing this option, you will be taken to an application that allows top-down browsing of a selected celestial body's surface very much like the maps application on most smart devices
 
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/951c8ed6-ddc4-45e4-b1dd-8e0a779bca12)
 
-_Mercury's surface shown with the various options to fine tune the data_
+_Mercury's surface is shown with the various options to fine-tune the data_
 
 
 ***Exoplanet Archive:***
-Finally when selecting this option you obtain a 
+Finally, when selecting this option you obtain a 
 
 ## Impact
 
