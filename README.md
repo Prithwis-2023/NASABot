@@ -2,7 +2,7 @@
 
 Our problem: The issue with our NASA data is that often it can be challenging to access for many coupled with mountains of data that can be time consuming to comb through. 
 
-**Problem Statement - What are the issues?**
+## Problem Statement - What are the issues?
 
 According to NASA’s Earth Science Data Systems (ESDS) Program, the term “Open Science” is defined as a collaborative culture enabled by technology that empowers the open sharing of data, information, and knowledge within the scientific community and the wider public to accelerate scientific research and understanding. A system based on open science aims to make the scientific process as open as possible by making all elements of a claimed discovery readily accessible, which enables results to be repeated and validated.
 
