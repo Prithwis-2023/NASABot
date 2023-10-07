@@ -113,10 +113,13 @@ Selecting this prompt in the drop-down menu and selecting Submit will give you t
 
 
 ***Earth Polychromatic Imaging Camera (EPIC):***
-When selecting this option, you get a second prompt asking for a date. You can either type or select a date from the calendar and once you press search, you get a full list of photos from the EPIC from that particular date. EPIC provides full-color high-definition photos of the earth's day side from Lagrange 1 orbit.
+When selecting this option, you get a second prompt asking for a date. You can either type or select a date from the calendar and once you press search, you get a full list of photos from the EPIC from that particular date. 
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/4f9d711d-7243-4d5d-beec-4f6dd5d4a151)
-_Prompt screen for the EPIC_
-On the side of each image, there are arrows that allow you to change the image to a different part of the earth's surface. Selecting the left arrow with give a view of earth shifted to the west and vice versa for the right arrow. 
+_Prompt screen for the EPIC option_
+
+On the side of each image, there are arrows that allow you to change the image to a different part of the earth's surface. Selecting the left arrow with give a view of earth shifted to the west and vice versa for the right arrow. EPIC provides full-color high-definition photos of the earth's day side from Lagrange 1 orbit. 
+![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/3ec213cd-4383-4ccb-9e33-85419521b761)
+_Example of the type of images taken from EPIC that can be displayed_
 
 
 ***earth-based imagery:***
