@@ -130,9 +130,9 @@ _Selection screen for access mars rover photos. Note that on some sols, the sele
 
 
 **Martian weather update:***
-When selecting this option, the program will return the current weather in gale crater on mars that is measured by the mars curoisity rover. The weather from the past 7 sols on mars as well at the earth date equivalent will also be displayed below the current wather data.
+When selecting this option, the program will return the current weather in gale crater on mars that is measured by the mars curoisity rover. The weather from the past 7 sols on mars as well at the earth date equivalent will also be displayed below the current wather data. The Temperature measurement can also be changed between fahrenheit and celsius by clicking on F or C next to the current high and low temperatures. 
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/0c71e50e-c9d7-48df-915a-8f25df8aaf47)
-_Weather data display screen_ 
+_Weather data display screen example_ 
 
 
 ***Trek Map:***
