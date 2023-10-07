@@ -38,6 +38,15 @@ Our web application called OpenScientia is designed to make accessing data quick
 4. To promote collaboration and knowledge sharing
 5. To contribute to the Sustainable Development Goals, particularly SDG 4: Quality Education
 
+## Marketing strategy
+- Our marketing strategy starts with a deep user needs understanding. We aim to ensure a user-centric approach.
+- Our web application stands out by providing a user-friendly experience, making it effortless for everyone to get access to data!
+- We are considering creating  and sharing valuable content to help users harness the full potential of our web application, such as webinars, tutorials, and blog posts.
+- Email campaign planification will also be implemented, so as to share the latest features, like data tips, and tricks to help users to boost their data access experience.
+- We are exploring partnerships with influential figures in data analysis and data-related businesses, to endorse the perfect combination of simplicity and effectiveness, in other to generate additional value and expand the user reach base.
+- Our commitment to user delight means continuous updates and outstanding user service.
+- Our data-driven strategy involves ongoing analyses of user’s interactions and preferences to enhance the user experience.
+- Downstream, we will make sure to collect users’ feedback by encouraging them to share their thoughts and suggestions for ongoing betterment.
 
 
 ## How does it work?
