@@ -32,11 +32,40 @@ In addition, the reproducibility of the data is also taken into consideration.
 
 Our web application called OpenScientia is designed to make accessing data quick and easy especially as well as convenient with simple prompts and selections. A good example is 
 
-1. To increase accessibility, inclusivity and reproducibility of NASA science 
+1. To increase accessibility, inclusivity, and reproducibility of NASA science 
 2. To ensure easy and quick access to NASA's data
 3. To advance scientific research and innovation
 4. To promote collaboration and knowledge sharing
 5. To contribute to the Sustainable Development Goals, particularly SDG 4: Quality Education
+
+## Market analysis
+
+***Market size:***
+Over $350 billion is the current market worth of the global space business, and due to rising government and private sector initiatives, there is substantial room for expansion.
+***Target audience:***
+- Space enthusiasts
+- Students
+- Researchers
+- Everyone interested in astronomy, space exploration, and related subject matter.
+***Competition:***
+  No competition only collaboration!
+***Unique proposition:***
+  In contrast to conventional static space websites, our web application provides a user-friendly and dynamic platform for users to explore real-time space data, instructional content, and community involvement.
+***Market entry strategy:***
+  To get started, we intend to debut with a substantial content library.
+***Pricing strategy:***
+  Free access
+***Distribution channels:***
+   To advertise our software, we will make use of social media, space discussion forums, and collaborations with space news organizations.
+***Legal considerations:***
+   We will make sure that copyright and space data usage laws are followed.
+***Swot analysis:***
+  Our user-friendliness and real-time data are our strongest suit. Competition and the requirement for constant content updating are weaknesses. Threats include shifting space policies, while opportunities include the expansion of the space sector.
+***Market positioning:***
+  We present ourselves as the leading platform for engaging space exploration and education, with messaging emphasizing user participation and real-time data availability.
+***Marketing budget:**
+  A budget of $60,000 for the initial marketing campaign.
+  
 
 ## Marketing strategy
 - Our marketing strategy starts with a deep user needs understanding. We aim to ensure a user-centric approach.
