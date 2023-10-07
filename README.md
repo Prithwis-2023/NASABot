@@ -66,7 +66,9 @@ The "Mars rover Photos option" will give you a prompt that will require the sol 
 FInally when selecting the "Exoplant Archive", you obtain a 
 
 ## Impact
+OpenScientia could create significant impacts, for both the scientific community and general public. However, we highlight the focus groups of researchers, students, enthusiasts, educators, and citizen scientists. Researchers can benefit from OpenScientia by accessing open science data to conduct their research and make new discoveries. Students may use data presented on OpenScientia to complete their coursework and research projects while enthusiasts can explore open science data related to space exploration, astronomy, and other scientific fields. Educators can incorporate open science data into their teaching and curriculum. Citizen scientists can contribute to scientific research by analyzing open science data.
 
+First of all, 
 
 ## Conclusion 
 In summary, our web application is designed to make NASA data and imagery easily accessible to the masses with a user friendly prompt
