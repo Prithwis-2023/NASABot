@@ -1,8 +1,16 @@
 # NASABot
+#### *Empowering Open Science together with NASABot.* 
 
-Our problem: The issue with our NASA data is that often it can be challenging to access for many coupled with mountains of data that can be time consuming to comb through. 
+
+Hey there! Welcome to NASABot. 
+NASABot is a user-friendly web application that allows you to access data directly from NASA archives. 
+Here, you can effortlessly explore various types of data, knowledge and information with just a few clicks. NASABot provides access to data such as displaying the Mars Rover Photos and text-based information from the NASA Media Library. 
+
+Check it out at NASABot!
 
 ## Problem Statement - What are the issues?
+
+Our problem: The issue with our NASA data is that often it can be challenging to access for many coupled with mountains of data that can be time consuming to comb through. 
 
 According to NASA’s Earth Science Data Systems (ESDS) Program, the term “Open Science” is defined as a collaborative culture enabled by technology that empowers the open sharing of data, information, and knowledge within the scientific community and the wider public to accelerate scientific research and understanding. A system based on open science aims to make the scientific process as open as possible by making all elements of a claimed discovery readily accessible, which enables results to be repeated and validated.
 
@@ -20,10 +28,14 @@ Besides that, the issue regarding inclusivity shall also be highlighted. Oftenti
 In addition, the reproducibility of the data is also taken into consideration. 
 
 
-##Our objectives
+## Our objectives - What do we want to achieve?
 
 Our web application called NASABot is designed to make accessing data quick and easy especially as well as convenient with simple prompts and selections. A good example is 
 
+1. To 
+
+
+## How does it work?
 
 This program is designed to work very similar to an internet search engine.
 
@@ -49,4 +61,5 @@ The "Mars rover Photos option" will give you a prompt that will require the sol 
 FInally when selecting the "Exoplant Archive", you obtain a 
 
 
-Conclusion: In summary, our web application is designed to make NASA data and imagery easily accessible to the masses with a user friendly prompt
+## Conclusion 
+In summary, our web application is designed to make NASA data and imagery easily accessible to the masses with a user friendly prompt
