@@ -2,6 +2,25 @@
 
 Our problem: The issue with our NASA data is that often it can be challenging to access for many coupled with mountains of data that can be time consuming to comb through. 
 
+**Problem Statement - What are the issues?**
+
+According to NASA’s Earth Science Data Systems (ESDS) Program, the term “open science” is defined as a collaborative culture enabled by technology that empowers the open sharing of data, information, and knowledge within the scientific community and the wider public to accelerate scientific research and understanding. A system based on open science aims to make the scientific process as open as possible by making all elements of a claimed discovery readily accessible, which enables results to be repeated and validated.
+
+In short, Open science is a movement that aims to make scientific research and data more accessible, transparent, and collaborative. In this case, we highlight the impact of open science with NASABot in three terms, which are: 
+
+
+* **Accessibility**
+* **Inclusivity**
+* **Reproducibility**
+
+However, one of the critical issues to be emphasized in our progress marching towards the era of open science is lacking proper data management. Although NASA’s data such as The ESDS Program provides full and open access to NASA's collection of Earth science data, it might not be as accessible and generally known by the public. This can limit the ability of the majority of our society, including university or school students and enthusiasts to learn more as well as make new discoveries and advancements in the field. 
+
+Besides that, the issue regarding inclusivity shall also be highlighted. Oftentimes, the data are presented in a relatively professional and scientific way, which restricts the understanding of the general public, at a certain level. Therefore, NASABot presents the publicly available data in a rather easier and simple way to understand, by a straightforward search engine-like webpage, to enable an effortless way for the public to access and comprehend the data. 
+
+In addition, the reproducibility of the data is also taken into consideration. 
+
+
+***
 Our objectives: Our web application called NASABot is designed to make accessing data quick and easy especially as well as convenient with simple prompts and selections. A good example is 
 
 
