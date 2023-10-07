@@ -4,7 +4,7 @@
 
 Hey there! Welcome to OpenScientia. 
 OpenScientia is a user-friendly web application that allows you to access data directly from NASA archives. 
-Here, you can effortlessly explore various types of data, knowledge and information with just a few clicks. NASABot provides access to data such as displaying the Mars Rover Photos and text-based information from the NASA Media Library. 
+Here, you can effortlessly explore various types of data, knowledge, and information with just a few clicks. NASABot provides access to data such as displaying the Mars Rover Photos and text-based information from the NASA Media Library. 
 
 Check it out at OpenScientia!
 
@@ -21,9 +21,9 @@ In short, Open science is a movement that aims to make scientific research and d
 * **Inclusivity**
 * **Reproducibility**
 
-However, one of the critical issues to be emphasized in our progress marching towards the era of open science is lacking proper data management. Although NASA’s data such as The ESDS Program provides full and open access to NASA's collection of Earth science data, it might not be as accessible and generally known by the public. This can limit the ability of the majority of our society, including university or school students and enthusiasts to learn more as well as make new discoveries and advancements in the field. 
+However, one of the critical issues to be emphasized in our progress marching toward the era of open science is the lack of proper data management. Although NASA’s data such as The ESDS Program provides full and open access to NASA's collection of Earth science data, it might not be as accessible and generally known by the public. This can limit the ability of the majority of our society, including university or school students and enthusiasts to learn more as well as make new discoveries and advancements in the field. 
 
-Besides that, the issue regarding inclusivity shall also be highlighted. Oftentimes, the data are presented in a relatively professional and scientific way, which restricts the understanding of the general public, at a certain level. Therefore, NASABot presents the publicly available data in a rather easier and simple way to understand, by a straightforward search engine-like webpage, to enable an effortless way for the public to access and comprehend the data. 
+Besides that, the issue regarding inclusivity shall also be highlighted. Oftentimes, the data are presented in a relatively professional and scientific way, which restricts the understanding of the general public, at a certain level. Therefore, NASABot presents the publicly available data in a rather easier and simpler way to understand, by a straightforward search engine-like webpage, to enable an effortless way for the public to access and comprehend the data. 
 
 In addition, the reproducibility of the data is also taken into consideration. 
 
@@ -41,7 +41,7 @@ Our web application called OpenScientia is designed to make accessing data quick
 ## Market analysis
 
 ***Market size:***
-Over $350 billion is the current market worth of the global space business, and due to rising government and private sector initiatives, there is substantial room for expansion.
+Over $464 billion is the current market worth of the global space business, and due to rising government and private sector initiatives, there is substantial room for expansion.
 
 
 ***Target audience:***
@@ -64,7 +64,7 @@ Over $350 billion is the current market worth of the global space business, and 
 
   
 ***Pricing strategy:***
-  Free access
+  Free access.
 
   
 ***Distribution channels:***
@@ -91,7 +91,7 @@ Over $350 billion is the current market worth of the global space business, and 
 - Our marketing strategy starts with a deep user needs understanding. We aim to ensure a user-centric approach.
 - Our web application stands out by providing a user-friendly experience, making it effortless for everyone to get access to data!
 - We are considering creating  and sharing valuable content to help users harness the full potential of our web application, such as webinars, tutorials, and blog posts.
-- Email campaign planification will also be implemented, so as to share the latest features, like data tips, and tricks to help users to boost their data access experience.
+- Email campaign planning will also be implemented, so as to share the latest features, like data tips, and tricks to help users to boost their data access experience.
 - We are exploring partnerships with influential figures in data analysis and data-related businesses, to endorse the perfect combination of simplicity and effectiveness, in other to generate additional value and expand the user reach base.
 - Our commitment to user delight means continuous updates and outstanding user service.
 - Our data-driven strategy involves ongoing analyses of user’s interactions and preferences to enhance the user experience.
@@ -106,22 +106,37 @@ This program is designed to work very similar to an internet search engine.
 Note that the red, yellow, and green buttons on the top left of the window do not work
 
 
-Selecting "Astronomy Picture of the Day" in the drop down menu and selecting submit will give you the current day's selected picture from the NASA API. The image will be provided with the date as well as a description of the image contents to give the viewer some background context and some information on how the image was taken. 
+***Astronomy Picture of the Day:***
+Selecting this prompt in the drop-down menu and selecting Submit will give you the current day's selected picture from the NASA API. The image will be provided with the date as well as a description of the image contents to give the viewer some background context and some information on how the image was taken. 
 
 
-When selecting "Earth Polychromatic Imaging Camera (EPIC)" in the drop down menu and pressing submit, you get a second promp asking for a date. You can either type or select a date from the calender and once you press search, you get a full list of photos from the EPIC from that particular date. EPIC provides full colour high definition photos of the earth's day side from langrange 1 orbit.
+***Earth Polychromatic Imaging Camera (EPIC):***
+When selecting this option, you get a second prompt asking for a date. You can either type or select a date from the calendar and once you press search, you get a full list of photos from the EPIC from that particular date. EPIC provides full-color high-definition photos of the earth's day side from Lagrange 1 orbit.
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/4f9d711d-7243-4d5d-beec-4f6dd5d4a151)
+_Prompt screen for the EPIC_
+On the side of each image, there are arrows that allow you to change the image to a different part of the earth's surface. Selecting the left arrow with give a view of earth shifted to the west and vice versa for the right arrow. 
 
 
-Submitting the "earth based imagery" option will give you a promp for entering the latitude, longitude, dimension, and date. Enter the respective information and you will obtain top down imagery of the location specified by the latitude and longitude coordinates on that date. This application can be very useful for individuals looking to find land use or geography data over time such as the shifting landscape or to monitor progress on a construction site. 
+***earth-based imagery:***
+Submitting this option will give you a prompt for entering the latitude, longitude, dimension, and date. Enter the respective information and you will obtain top-down imagery of the location specified by the latitude and longitude coordinates on that date.
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/27ba5cac-c1db-4e9f-9bc0-4a0b11f75de4)
+_The prompt screen for earth based imagery_
 
 
-The "Mars rover Photos option" will give you a prompt that will require the sol or day on mars and a selection of camera option. Sol represents martian days that the cuorisity rover has been on mars and a number can be entered to select the exact day that the photos are taken. The select camera allows the user to find the image based on the camera used on the cuorisity rover to take the image. Note that on some sols, the selected camera is not used which will not provide an image for the promp. As a result, the prompt will only provide a blank display. 
+***Mars rover Photos:***
+This prompt that will require the sol or day on Mars and a selection of camera options. Sol represents martian days that the Curiosity rover has been on Mars and a number can be entered to select the exact day that the photos are taken. The select camera allows the user to find the image based on the camera used on the Curiosity rover to take the image. 
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/78f0751c-48c0-4773-abd4-4d3733b92d41)
+_Selection screen for access mars rover photos. Note that on some sols, the selected camera is not used which will not provide an image for the prompt. As a result, the prompt will only provide a blank display_ 
 
 
-FInally when selecting the "Exoplant Archive", you obtain a 
+***Trek Map:***
+Utilizing this option, you will be taken to an application that allows top down browsing of a selected celestial body's surface very much like the maps application on most smart devices
+![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/951c8ed6-ddc4-45e4-b1dd-8e0a779bca12)
+_Mercury's surface shown with the various options to fine tune the data_
+
+
+***Exoplanet Archive:***
+Finally when selecting this option you obtain a 
 
 ## Impact
 
@@ -140,7 +155,7 @@ Moreover, Open Scientia enhances the reproducibility of open science, by making 
 By making NASA's data more understandable and accessible to a wider range of individuals and communities, OpenScientia also promotes diversity and inclusion. Everyone can simply navigate through and find their desired results with its user-friendly webpage. 
 
 ## Conclusion 
-In summary, our web application is designed to make NASA data and imagery easily accessible to the masses with a user friendly prompt
+In summary, our web application is designed to make NASA data and imagery easily accessible to the masses with a user-friendly prompt. Any person regardless of background or level of knowledge can simply enter what they want in the program and it will give out exactly the type of information asked as well as simple options to fine-tune the type of information given 
 
 
 ## Tools
@@ -155,3 +170,4 @@ In summary, our web application is designed to make NASA data and imagery easily
 * CSS
 
 ## References
+https://www.euroconsult-ec.com/press-release/value-of-space-economy-reaches-424-billion-in-2022-despite-new-unforeseen-investment-concerns-2/
