@@ -60,12 +60,18 @@ The "Mars rover Photos option" will give you a prompt that will require the sol 
 
 FInally when selecting the "Exoplant Archive", you obtain a 
 
+## Impact
+
 
 ## Conclusion 
 In summary, our web application is designed to make NASA data and imagery easily accessible to the masses with a user friendly prompt
 
 
-## Code Languages
+## Tools
+
+* NASA API Service 
+
+## Coding Languages
 
 
 ## References
