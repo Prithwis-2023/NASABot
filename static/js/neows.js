@@ -35,7 +35,19 @@ function populate(num){
             table.innerHTML = "";
 
             console.log(response);
-    
+
+            const header_row = document.createElement("tr");
+            const name_header = document.createElement("th");
+            const id_header = document.createElement("th");
+            const neos_id_header = document.createElement("th");
+            name_header.textContent = "Name";
+            id_header.textContent = "ID";
+            neos_id_header.textContent = "Neo Reference ID";
+            header_row.append(name_header);
+            header_row.append(id_header);
+            header_row.append(neos_id_header);
+            table.appendChild(header_row);
+
             response.near_earth_objects.forEach(obj => {
                 const new_row = document.createElement("tr");
                 const td_name = document.createElement("td");
