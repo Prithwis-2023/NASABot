@@ -1,4 +1,4 @@
-# NASABot
+# OpenScientia 
 ***Empowering Open Science together with OpenScientia.*** 
 
 
@@ -67,6 +67,19 @@ FInally when selecting the "Exoplant Archive", you obtain a
 
 ## Impact
 
+OpenScientia could create significant impacts, for both the scientific community and the general public. Our primary focus is on researchers, students, enthusiasts, educators, and citizen scientists. Researchers can benefit from OpenScientia by accessing open science data to conduct their research. Students may use data presented on OpenScientia to complete their coursework and research projects while enthusiasts can explore open science data related to space exploration, astronomy, and other scientific fields. Educators can incorporate open science data into their teaching and curriculum. Citizen scientists can contribute to scientific research by analyzing open science data.
+
+First of all, OpenScientia is an excellent tool that can make NASA's data more accessible to the public, enabling them to access valuable scientific information. As we highlight the inclusivity of OpenScientia, it is a search-engine-based web application, with a user-friendly design, enabling it to foster collaboration and knowledge sharing. This feature helps not only the scientific community but also the general public to understand scientific information better. 
+
+By making scientific data more accessible and transparent, OpenScientia can enhance public understanding of science and promote scientific literacy. This, in turn, can encourage citizen science initiatives and engagement, allowing individuals to contribute to scientific research by analyzing the open science data made available through OpenScientia.
+
+OpenScientia can also increase accessibility to Earth observation data, allowing the public to better understand and address environmental challenges. 
+
+Furthermore, by promoting open science practices, OpenScientia can increase transparency and accountability in scientific research, starting with NASA Science. This will ensure that research findings are accurate and valid, leading to discoveries and advancements in various fields and accelerating our scientific progress.
+
+Moreover, Open Scientia enhances the reproducibility of open science, by making NASA's data openly available, enabling others to confirm their findings. This also promotes transparency and accountability in scientific research, ensuring that research findings are precise and reliable. Hence, OpenScientia enables the public to gain a better understanding of NASA's data, leading to more dependable results as the public can confirm their findings.
+
+By making NASA's data more understandable and accessible to a wider range of individuals and communities, OpenScientia also promotes diversity and inclusion. Everyone can simply navigate through and find their desired results with its user-friendly webpage. 
 
 ## Conclusion 
 In summary, our web application is designed to make NASA data and imagery easily accessible to the masses with a user friendly prompt
@@ -78,5 +91,9 @@ In summary, our web application is designed to make NASA data and imagery easily
 
 ## Coding Languages
 
+* Javascript
+* Python
+* HTML
+* CSS
 
 ## References
