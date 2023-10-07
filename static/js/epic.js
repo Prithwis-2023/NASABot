@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 const label2 = document.createElement('div');
                 label2.className = 'alert alert-success';
                 label2.setAttribute("role", "alert");
-                const textNode = document.createTextNode(JSON.stringify(response[0].coords));
+                const textNode = document.createTextNode(JSON.stringify(response[0].coords, undefined, 1));
                 label2.appendChild(textNode);
                 console.log(JSON.stringify(response[0].coords));
 
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     const label = document.createElement('div');
                     label.className = 'alert alert-success';
                     label.setAttribute("role", "alert");
-                    const textNode = document.createTextNode(JSON.stringify(response[i].coords));
+                    const textNode = document.createTextNode(JSON.stringify(response[i].coords, undefined, 1));
                     label.appendChild(textNode);
                     console.log(JSON.stringify(response[i].coords));
 
