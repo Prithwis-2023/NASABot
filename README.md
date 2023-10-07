@@ -1,3 +1,5 @@
+What if the captain of Titanic knew about the iceberg? Would we ever hear about a film called Titanic? Would that film ever be released? Would 1,500 people lose their lives? the answer is No! The iceberg doesn’t only represent a part of nature, but he is part of everything! If we get to see the whole parts of the iceberg, history can change. Open Data  can be the secret door to change the future!
+
 # OpenScientia 
 ***Empowering Open Science together with OpenScientia.*** 
 
