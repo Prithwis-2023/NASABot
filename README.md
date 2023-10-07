@@ -104,23 +104,28 @@ Over $464 billion is the current market worth of the global space business, and 
 This program is designed to work very similar to an internet search engine. To simplify the search process, clicking on the search bar will open the drop down menu where the user can select the desired type of data they want.
 
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/d03a82af-a6c9-46c0-b0ac-ecdec6e3a2be)
+
 _The layout of the Openscientia site_
 
 Note that the red, yellow, and green buttons on the top left of the window do not work
 
 ***Astronomy Picture of the Day:***
 Selecting this prompt in the drop-down menu and selecting Submit will give you the current day's selected picture from the NASA API. The image will be provided with the date as well as a description of the image contents to give the viewer some background context and some information on how the image was taken. 
+
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/b95bade0-2449-4fce-a5e3-918ee80cfb5d)
 
 _An Example of the picture of the day for October 7 taken from the API_
 
 
 ***Earth Polychromatic Imaging Camera (EPIC):***
-When selecting this option, you get a second prompt asking for a date. You can either type or select a date from the calendar and once you press search, you get a full list of photos from the EPIC from that particular date. 
+When selecting this option, you get a second prompt asking for a date. You can either type or select a date from the calendar and once you press search, you get a full list of photos from the EPIC from that particular date.
+
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/4f9d711d-7243-4d5d-beec-4f6dd5d4a151)
+
 _Prompt screen for the EPIC option_
 
 On the side of each image, there are arrows that allow you to change the image to a different part of the earth's surface. Selecting the left arrow with give a view of earth shifted to the west and vice versa for the right arrow. EPIC provides full-color high-definition photos of the earth's day side from Lagrange 1 orbit. 
+
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/3ec213cd-4383-4ccb-9e33-85419521b761)
 
 _Example of the type of images taken from EPIC that can be displayed_
@@ -128,18 +133,23 @@ _Example of the type of images taken from EPIC that can be displayed_
 
 ***earth-based imagery:***
 Submitting this option will give you a prompt for entering the latitude, longitude, dimension, and date. Enter the respective information and you will obtain top-down imagery of the location specified by the latitude and longitude coordinates on that date.
+
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/27ba5cac-c1db-4e9f-9bc0-4a0b11f75de4)
+
 _The prompt screen for earth based imagery_
 
 
 ***Mars rover Photos:***
 This prompt that will require the sol or day on Mars and a selection of camera options. Sol represents martian days that the Curiosity rover has been on Mars and a number can be entered to select the exact day that the photos are taken. The select camera allows the user to find the image based on the camera used on the Curiosity rover to take the image. 
+
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/78f0751c-48c0-4773-abd4-4d3733b92d41)
+
 _Selection screen for access mars rover photos. Note that on some sols, the selected camera is not used which will not provide an image for the prompt. As a result, the prompt will only provide a blank display_ 
 
 
 **Martian weather update:***
 When selecting this option, the program will return the current weather in gale crater on mars that is measured by the mars curoisity rover. The weather from the past 7 sols on mars as well at the earth date equivalent will also be displayed below the current wather data. The Temperature measurement can also be changed between fahrenheit and celsius by clicking on F or C next to the current high and low temperatures. 
+
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/7120fec6-4498-433b-bde8-7e7dc96813b4)
 
 _Weather data display screen example_ 
@@ -147,7 +157,9 @@ _Weather data display screen example_
 
 ***Trek Map:***
 Utilizing this option, you will be taken to an application that allows top down browsing of a selected celestial body's surface very much like the maps application on most smart devices
+
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/951c8ed6-ddc4-45e4-b1dd-8e0a779bca12)
+
 _Mercury's surface shown with the various options to fine tune the data_
 
 
