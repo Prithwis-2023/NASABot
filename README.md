@@ -78,5 +78,9 @@ In summary, our web application is designed to make NASA data and imagery easily
 
 ## Coding Languages
 
+* Javascript
+* Python
+* HTML
+* CSS
 
 ## References
