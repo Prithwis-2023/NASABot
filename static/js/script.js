@@ -25,6 +25,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         } else if (selectedValue === 'trek') {
             window.location.href = '/trek';
+        
+        } else if (selectedValue === 'mars-weather') {
+            window.location.href = '/mars-weather';
         }
     });
 });

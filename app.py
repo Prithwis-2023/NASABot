@@ -43,6 +43,10 @@ def lib():
 def trek():
 	return render_template('trek.html')
 
+@app.route('/mars-weather')
+
+def mars_weather():
+	return render_template('mars_weather.html')
 
 if __name__ == '__main__':
 	app.run(debug=True)
