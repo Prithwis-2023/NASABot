@@ -1,12 +1,12 @@
 # NASABot
-***Empowering Open Science together with NASABot.*** 
+***Empowering Open Science together with OpenScientia.*** 
 
 
-Hey there! Welcome to NASABot. 
-NASABot is a user-friendly web application that allows you to access data directly from NASA archives. 
+Hey there! Welcome to OpenScientia. 
+OpenScientia is a user-friendly web application that allows you to access data directly from NASA archives. 
 Here, you can effortlessly explore various types of data, knowledge and information with just a few clicks. NASABot provides access to data such as displaying the Mars Rover Photos and text-based information from the NASA Media Library. 
 
-Check it out at NASABot!
+Check it out at OpenScientia!
 
 ## Problem Statement - What are the issues?
 
@@ -14,7 +14,7 @@ Our problem: The issue with our NASA data is that often it can be challenging to
 
 According to NASA’s Earth Science Data Systems (ESDS) Program, the term “Open Science” is defined as a collaborative culture enabled by technology that empowers the open sharing of data, information, and knowledge within the scientific community and the wider public to accelerate scientific research and understanding. A system based on open science aims to make the scientific process as open as possible by making all elements of a claimed discovery readily accessible, which enables results to be repeated and validated.
 
-In short, Open science is a movement that aims to make scientific research and data more accessible, transparent, and collaborative. In this case, we highlight the impact of open science with NASABot in three terms, which are: 
+In short, Open science is a movement that aims to make scientific research and data more accessible, transparent, and collaborative. In this case, we highlight the impact of open science with OpenScientia in three terms, which are: 
 
 
 * **Accessibility**
@@ -30,7 +30,7 @@ In addition, the reproducibility of the data is also taken into consideration.
 
 ## Our objectives - What do we want to achieve?
 
-Our web application called NASABot is designed to make accessing data quick and easy especially as well as convenient with simple prompts and selections. A good example is 
+Our web application called OpenScientia is designed to make accessing data quick and easy especially as well as convenient with simple prompts and selections. A good example is 
 
 1. To 
 
