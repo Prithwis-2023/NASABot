@@ -147,7 +147,7 @@ Moreover, Open Scientia enhances the reproducibility of open science, by making 
 By making NASA's data more understandable and accessible to a wider range of individuals and communities, OpenScientia also promotes diversity and inclusion. Everyone can simply navigate through and find their desired results with its user-friendly webpage. 
 
 ## Conclusion 
-In summary, our web application is designed to make NASA data and imagery easily accessible to the masses with a user-friendly prompt
+In summary, our web application is designed to make NASA data and imagery easily accessible to the masses with a user-friendly prompt. Any person regardless of background or level of knowledge can simply enter what they want in the program and it will give out excatly the type of information asked as well as simpole options to fine tune the type of information given 
 
 
 ## Tools
