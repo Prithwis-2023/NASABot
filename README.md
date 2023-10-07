@@ -100,11 +100,13 @@ Over $464 billion is the current market worth of the global space business, and 
 
 ## How does it work?
 
-This program is designed to work very similar to an internet search engine.
+*** Main Screen**
+This program is designed to work very similar to an internet search engine. To simplify the search process, clicking on the search bar will open the drop down menu where the user can select the desired type of data they want.
 
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/d03a82af-a6c9-46c0-b0ac-ecdec6e3a2be)
-Note that the red, yellow, and green buttons on the top left of the window do not work
+_The layout of the Openscientia site_
 
+Note that the red, yellow, and green buttons on the top left of the window do not work
 
 ***Astronomy Picture of the Day:***
 Selecting this prompt in the drop-down menu and selecting Submit will give you the current day's selected picture from the NASA API. The image will be provided with the date as well as a description of the image contents to give the viewer some background context and some information on how the image was taken. 
