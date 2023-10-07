@@ -110,6 +110,8 @@ Note that the red, yellow, and green buttons on the top left of the window do no
 
 ***Astronomy Picture of the Day:***
 Selecting this prompt in the drop-down menu and selecting Submit will give you the current day's selected picture from the NASA API. The image will be provided with the date as well as a description of the image contents to give the viewer some background context and some information on how the image was taken. 
+![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/b95bade0-2449-4fce-a5e3-918ee80cfb5d)
+_An Example of the picture of the day for October 7 taken from the API_
 
 
 ***Earth Polychromatic Imaging Camera (EPIC):***
