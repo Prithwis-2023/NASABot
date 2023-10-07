@@ -117,8 +117,12 @@ Submitting the "earth-based imagery" option will give you a prompt for entering 
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/27ba5cac-c1db-4e9f-9bc0-4a0b11f75de4)
 
 
-The "Mars rover Photos option" will give you a prompt that will require the sol or day on Mars and a selection of camera options. Sol represents martian days that the Curiosity rover has been on Mars and a number can be entered to select the exact day that the photos are taken. The select camera allows the user to find the image based on the camera used on the Curiosity rover to take the image. Note that on some sols, the selected camera is not used which will not provide an image for the prompt. As a result, the prompt will only provide a blank display. 
+The "Mars rover Photos option" will give you a prompt that will require the sol or day on Mars and a selection of camera options. Sol represents martian days that the Curiosity rover has been on Mars and a number can be entered to select the exact day that the photos are taken. The select camera allows the user to find the image based on the camera used on the Curiosity rover to take the image. 
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/78f0751c-48c0-4773-abd4-4d3733b92d41)
+Note that on some sols, the selected camera is not used which will not provide an image for the prompt. As a result, the prompt will only provide a blank display. 
+
+Utilizing the "Trek Map" option, you will be taken to an application that allows top down browsing of a selected celestial body
+![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/951c8ed6-ddc4-45e4-b1dd-8e0a779bca12)
 
 
 Finally when selecting the "Exoplanet Archive", you obtain a 
