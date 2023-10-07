@@ -129,6 +129,12 @@ This prompt that will require the sol or day on Mars and a selection of camera o
 _Selection screen for access mars rover photos. Note that on some sols, the selected camera is not used which will not provide an image for the prompt. As a result, the prompt will only provide a blank display_ 
 
 
+**Martian weather update:***
+When selecting this option, the program will return the current weather in gale crater on mars that is measured by the mars curoisity rover. The weather from the past 7 sols on mars as well at the earth date equivalent will also be displayed below the current wather data.
+![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/0c71e50e-c9d7-48df-915a-8f25df8aaf47)
+_Weather data display screen_ 
+
+
 ***Trek Map:***
 Utilizing this option, you will be taken to an application that allows top down browsing of a selected celestial body's surface very much like the maps application on most smart devices
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/951c8ed6-ddc4-45e4-b1dd-8e0a779bca12)
