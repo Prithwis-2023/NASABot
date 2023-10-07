@@ -10,7 +10,7 @@ Check it out at OpenScientia!
 
 ## Problem Statement - What are the issues?
 
-Our problem: The issue with our NASA data is that often it can be challenging to access for many coupled with mountains of data that can be time consuming to comb through. 
+Our problem: The issue with our NASA data is that often it can be challenging to access for many coupled with mountains of data that can be time-consuming to comb through. 
 
 According to NASA’s Earth Science Data Systems (ESDS) Program, the term “Open Science” is defined as a collaborative culture enabled by technology that empowers the open sharing of data, information, and knowledge within the scientific community and the wider public to accelerate scientific research and understanding. A system based on open science aims to make the scientific process as open as possible by making all elements of a claimed discovery readily accessible, which enables results to be repeated and validated.
 
@@ -43,35 +43,45 @@ Our web application called OpenScientia is designed to make accessing data quick
 ***Market size***
 Over $350 billion is the current market worth of the global space business, and due to rising government and private sector initiatives, there is substantial room for expansion.
 
+
 ***Target audience***
 - Space enthusiasts
 - Students
 - Researchers
 - Everyone interested in astronomy, space exploration, and related subject matter.
+
   
 ***Competition***
   No competition only collaboration!
+
   
 ***Unique proposition***
   In contrast to conventional static space websites, our web application provides a user-friendly and dynamic platform for users to explore real-time space data, instructional content, and community involvement.
+
   
 ***Market entry strategy***
   To get started, we intend to debut with a substantial content library.
+
   
 ***Pricing strategy***
   Free access
+
   
 ***Distribution channels***
    To advertise our software, we will make use of social media, space discussion forums, and collaborations with space news organizations.
+
    
 ***Legal considerations***
    We will make sure that copyright and space data usage laws are followed.
+
    
 ***Swot analysis***
   Our user-friendliness and real-time data are our strongest suit. Competition and the requirement for constant content updating are weaknesses. Threats include shifting space policies, while opportunities include the expansion of the space sector.
+
   
 ***Market positioning***
   We present ourselves as the leading platform for engaging space exploration and education, with messaging emphasizing user participation and real-time data availability.
+
   
 ***Marketing budget:**
   A budget of $60,000 for the initial marketing campaign.
