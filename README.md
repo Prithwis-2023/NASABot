@@ -1,4 +1,4 @@
-# NASABot
+# OpenScientia 
 ***Empowering Open Science together with OpenScientia.*** 
 
 
