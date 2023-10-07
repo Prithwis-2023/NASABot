@@ -7,7 +7,7 @@ req.send();
 req.addEventListener("load", function(){
     if(req.status == 200 && req.readyState == 4){
         var response = JSON.parse(req.responseText);
-        total_pages = response.page.total_pages + 1;
+        total_pages = response.page.total_pages;
         console.log(response);
 
         document.getElementById("page").textContent = page+1;
@@ -77,7 +77,7 @@ function prevpage(){
     populate(page)
 }
 function nextpage(){
-    if(page == total_pages){
+    if(page >= total_pages-1){
         return
     }
     page += 1;
@@ -93,3 +93,4 @@ document.onload = function(){
     prevButton.addEventListener('click',prevpage);
 }
 populate(page);
+
