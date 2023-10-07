@@ -69,17 +69,37 @@ document.addEventListener('DOMContentLoaded', function() {
                 img2.className = 'd-block w-100';
                 img2.src =imageUrls[0];
                 slide2.appendChild(img2);
+               
+                const label2 = document.createElement('div');
+                label2.className = 'alert alert-success';
+                label2.setAttribute("role", "alert");
+                const textNode = document.createTextNode(JSON.stringify(response[0].coords));
+                label2.appendChild(textNode);
+                console.log(JSON.stringify(response[0].coords));
+
+                //document.getElementById('metadata').textContent = JSON.stringify(response[0].coords); 
+                //label2.appendChild(p2);
+                slide2.appendChild(label2) 
                 slidesContainer.appendChild(slide2);
 
                 for (let i = 1; i < imageUrls.length; i++)
                 {
-                        const slide = document.createElement('div');
-                        slide.className = 'carousel-item';
-                        const img = document.createElement('img');
-                        img.className ='d-block w-100';
-                        img.src = imageUrls[i];
-                        slide.appendChild(img);
-                        slidesContainer.appendChild(slide);
+                    const slide = document.createElement('div');
+                    slide.className = 'carousel-item';
+                    const img = document.createElement('img');
+                    img.className ='d-block w-100';
+                    img.src = imageUrls[i];
+                    slide.appendChild(img);
+                    
+                    const label = document.createElement('div');
+                    label.className = 'alert alert-success';
+                    label.setAttribute("role", "alert");
+                    const textNode = document.createTextNode(JSON.stringify(response[i].coords));
+                    label.appendChild(textNode);
+                    console.log(JSON.stringify(response[i].coords));
+
+                    slide.appendChild(label)
+                    slidesContainer.appendChild(slide);
                 }
                 console.log(slidesContainer);
             }    
