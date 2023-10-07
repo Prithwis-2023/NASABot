@@ -4,7 +4,7 @@ Our problem: The issue with our NASA data is that often it can be challenging to
 
 **Problem Statement - What are the issues?**
 
-According to NASA’s Earth Science Data Systems (ESDS) Program, the term “open science” is defined as a collaborative culture enabled by technology that empowers the open sharing of data, information, and knowledge within the scientific community and the wider public to accelerate scientific research and understanding. A system based on open science aims to make the scientific process as open as possible by making all elements of a claimed discovery readily accessible, which enables results to be repeated and validated.
+According to NASA’s Earth Science Data Systems (ESDS) Program, the term “Open Science” is defined as a collaborative culture enabled by technology that empowers the open sharing of data, information, and knowledge within the scientific community and the wider public to accelerate scientific research and understanding. A system based on open science aims to make the scientific process as open as possible by making all elements of a claimed discovery readily accessible, which enables results to be repeated and validated.
 
 In short, Open science is a movement that aims to make scientific research and data more accessible, transparent, and collaborative. In this case, we highlight the impact of open science with NASABot in three terms, which are: 
 
