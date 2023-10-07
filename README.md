@@ -40,50 +40,50 @@ Our web application called OpenScientia is designed to make accessing data quick
 
 ## Market analysis
 
-***Market size***
+***Market size:***
 Over $350 billion is the current market worth of the global space business, and due to rising government and private sector initiatives, there is substantial room for expansion.
 
 
-***Target audience***
+***Target audience:***
 - Space enthusiasts
 - Students
 - Researchers
 - Everyone interested in astronomy, space exploration, and related subject matter.
 
   
-***Competition***
+***Competition:***
   No competition only collaboration!
 
   
-***Unique proposition***
+***Unique proposition:***
   In contrast to conventional static space websites, our web application provides a user-friendly and dynamic platform for users to explore real-time space data, instructional content, and community involvement.
 
   
-***Market entry strategy***
+***Market entry strategy:***
   To get started, we intend to debut with a substantial content library.
 
   
-***Pricing strategy***
+***Pricing strategy:***
   Free access
 
   
-***Distribution channels***
+***Distribution channels:***
    To advertise our software, we will make use of social media, space discussion forums, and collaborations with space news organizations.
 
    
-***Legal considerations***
+***Legal considerations:***
    We will make sure that copyright and space data usage laws are followed.
 
    
-***Swot analysis***
+***Swot analysis:***
   Our user-friendliness and real-time data are our strongest suit. Competition and the requirement for constant content updating are weaknesses. Threats include shifting space policies, while opportunities include the expansion of the space sector.
 
   
-***Market positioning***
+***Market positioning:***
   We present ourselves as the leading platform for engaging space exploration and education, with messaging emphasizing user participation and real-time data availability.
 
   
-***Marketing budget:**
+***Marketing budget:***
   A budget of $60,000 for the initial marketing campaign.
   
 
