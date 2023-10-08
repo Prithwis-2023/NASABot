@@ -207,8 +207,6 @@ In summary, our web application is designed to make NASA data and imagery easily
 ## References
 
 * https://en.wikipedia.org/wiki/Titanic
-  
-* https://www.euroconsult-ec.com/press-release/value-of-space-economy-reaches-424-billion-in-2022-despite-new-unforeseen-investment-concerns-2/
 
 * https://api.nasa.gov/
 
