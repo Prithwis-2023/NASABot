@@ -215,3 +215,4 @@ In summary, our web application is designed to make NASA data and imagery easily
 
 * https://www.earthdata.nasa.gov/technology/open-science 
 
+Written by Joshua Wong, Safaa Faiz, and Chuah Yee Jia
