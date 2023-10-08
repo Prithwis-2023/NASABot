@@ -207,7 +207,7 @@ In summary, our web application is designed to make NASA data and imagery easily
 ## References
 
 * https://en.wikipedia.org/wiki/Titanic
-  
+
 * https://api.nasa.gov/
 
 * https://mars.nasa.gov/msl/weather/
