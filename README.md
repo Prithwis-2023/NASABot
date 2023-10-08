@@ -139,12 +139,20 @@ On the side of each image, there are arrows that allow you to change the image t
 _Example of the type of images taken from EPIC that can be displayed_
 
 
-***Earth-based imagery:***
-Submitting this option will give you a prompt for entering the latitude, longitude, dimension, and date. Enter the respective information and you will obtain top-down imagery of the location specified by the latitude and longitude coordinates on that date.
+***Near Earth Object Web Service:***
+Submitting this option will give you 2 green buttons labelled "NEO Browse" and "NEO Feed". 
 
-![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/27ba5cac-c1db-4e9f-9bc0-4a0b11f75de4)
+NEO browse pulls up the full database of near earth objects recorded since the year 1900. This gives you the name, magnitude, Relative velocity, minimum estimated data, close approach date, and potential hazard of the near earth objects.
 
-_The prompt screen for earth-based imagery_
+![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/73a55b33-7930-4c59-ba82-92a55daa80f7)
+
+_The datasheet returned from selecting NEO browse_
+
+NEO feed allows the user to see the list of near earth objects for a given period between 2 entered dates. It features their name, ID, diameter, closest approach time, velocity, miss distance, magnitude, and if its hazardous
+
+![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/2648140b-3c6e-4290-b8e0-cbd2357612f1)
+
+_The prompt screen for NEO Feed. It is very important that the dates entered are no more than 7 days apart_
 
 
 ***Mars rover Photos:***
