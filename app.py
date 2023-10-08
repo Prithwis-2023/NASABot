@@ -48,5 +48,10 @@ def trek():
 def mars_weather():
 	return render_template('mars_weather.html')
 
+@app.route('/live')
+
+def live():
+	return render_template("live_iss.html")
+
 if __name__ == '__main__':
 	app.run(debug=True)
