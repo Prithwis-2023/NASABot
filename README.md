@@ -150,7 +150,7 @@ _The datasheet returned from selecting NEO browse_
 
 NEO feed allows the user to see the list of near earth objects for a given period between 2 entered dates. It features their name, ID, diameter, closest approach time, velocity, miss distance, magnitude, and if its hazardous
 
-![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/2648140b-3c6e-4290-b8e0-cbd2357612f1)
+![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/dcc9d6b3-f447-41b4-90a3-2538c48093c0)
 
 _The prompt screen for NEO Feed. It is very important that the dates entered are no more than 7 days apart_
 
