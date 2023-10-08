@@ -1,5 +1,6 @@
-
-![image](https://github.com/Prithwis-2023/NASABot/blob/main/10-07%20at%2017.07.58.jpeg?raw=true)
+<p align="center">
+  <img src="https://github.com/Prithwis-2023/NASABot/assets/72024767/cc65ea1e-3316-42ec-aba4-75c422ade84e">
+</p>
 
 ***What if the captain of Titanic knew about the iceberg? Would we ever hear about a film called Titanic? Would that film ever be released? Would 1,500 people lose their lives? The answer is NO! The iceberg doesn’t only represent a part of nature, but he is part of everything, he is a part of us! If we get to see the whole parts of the iceberg, history can change.  Open Data  can be the secret door that changes the future!***
 
