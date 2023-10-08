@@ -58,15 +58,11 @@ Over $464 billion is the current market worth of the global space business, and 
 
   
 ***Competition:***
-  No competition only collaboration!
+  No competition, only collaboration!
 
   
 ***Unique proposition:***
   In contrast to conventional static space websites, our web application provides a user-friendly and dynamic platform for users to explore real-time space data, instructional content, and community involvement.
-
-  
-***Market entry strategy:***
-  To get started, we intend to debut with a substantial content library.
 
   
 ***Pricing strategy:***
@@ -81,8 +77,9 @@ Over $464 billion is the current market worth of the global space business, and 
    We will make sure that copyright and space data usage laws are followed.
 
    
-***Swot analysis:***
-  Our user-friendliness and real-time data are our strongest suit. Competition and the requirement for constant content updating are weaknesses. Threats include shifting space policies, while opportunities include the expansion of the space sector.
+***Strengths & opportunities:***
+  *- Our user-friendliness and real-time data are our strongest suit. 
+  *- Our greatest opportunity presents itself in the expansion of the space sector.
 
   
 ***Market positioning:***
