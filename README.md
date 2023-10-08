@@ -10,7 +10,8 @@
 
 Hey there! Welcome to OpenScientia. 
 OpenScientia is a user-friendly web application that allows you to access data directly from NASA archives. 
-Here, you can effortlessly explore various types of data, knowledge, and information with just a few clicks. NASABot provides access to data such as displaying the Mars Rover Photos and Martian Weather Updates. 
+Here, you can effortlessly explore various types of data, knowledge, and information with just a few clicks. OpenScientia provides access to data such as displaying the Mars Rover Photos and text-based information from the NASA Media Library. 
+
 
 Check it out at OpenScientia!
 
@@ -82,7 +83,8 @@ Over $464 billion is the current market worth of the global space business, and 
 
    
 ***Swot analysis:***
-  Our user-friendliness and real-time data are our strongest suit. Competition and the requirement for constant content updating are weaknesses. Threats include shifting space policies, while opportunities include the expansion of the space sector.
+  *Our user-friendliness and real-time data are our strongest suit.  
+  *Our greatest opportunity presents itself in the expansion of the space sector.
 
   
 ***Market positioning:***
@@ -187,7 +189,7 @@ Moreover, Open Scientia enhances the reproducibility of open science, by making 
 By making NASA's data more understandable and accessible to a wider range of individuals and communities, OpenScientia also promotes diversity and inclusion. Everyone can simply navigate through and find their desired results with its user-friendly webpage. 
 
 ## Conclusion 
-In summary, our web application is designed to make NASA data and imagery easily accessible to the masses with a user-friendly prompt. Any person regardless of background or level of knowledge can simply enter what they want in the program and it will give out exactly the type of information asked as well as simple options to fine-tune the type of information given 
+In summary, our web application is designed to make NASA data and imagery easily accessible to the masses with a user-friendly prompt. Any person regardless of background or level of knowledge can simply enter what they want in the program and it will give out exactly the type of information asked as well as simple options to fine-tune the type of information given. 
 
 
 ## Tools
