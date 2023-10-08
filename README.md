@@ -137,14 +137,6 @@ On the side of each image, there are arrows that allow you to change the image t
 _Example of the type of images taken from EPIC that can be displayed_
 
 
-***Earth-based imagery:***
-Submitting this option will give you a prompt for entering the latitude, longitude, dimension, and date. Enter the respective information and you will obtain top-down imagery of the location specified by the latitude and longitude coordinates on that date.
-
-![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/27ba5cac-c1db-4e9f-9bc0-4a0b11f75de4)
-
-_The prompt screen for earth-based imagery_
-
-
 ***Mars rover Photos:***
 This prompt will require the sol or day on Mars and a selection of camera options. Sol represents the martian days that the Curiosity rover has been on Mars and a number can be entered to select the exact day that the photos are taken. The select camera allows the user to find the image based on the camera used on the Curiosity rover to take the image. 
 
