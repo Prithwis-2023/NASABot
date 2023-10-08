@@ -31,37 +31,46 @@ function populate(num){
             var response = JSON.parse(req.responseText);
 
             let table = document.getElementById("near_earth_object_table");
-            table.setAttribute("width", "60%");
+            table.setAttribute("width", "80%");
             table.innerHTML = "";
 
             console.log(response);
 
             const header_row = document.createElement("tr");
             const name_header = document.createElement("th");
-            const id_header = document.createElement("th");
+            //const id_header = document.createElement("th");
             const neos_id_header = document.createElement("th");
+            const h_mag_header = document.createElement("th");
+            const hazardous_header = document.createElement("th");
             name_header.textContent = "Name";
-            id_header.textContent = "ID";
+            //id_header.textContent = "ID";
             neos_id_header.textContent = "Neo Reference ID";
+            h_mag_header.textContent ="H (Mag)";
+            hazardous_header.textContent = "Is Potentially Hazardous";
             header_row.append(name_header);
-            header_row.append(id_header);
+            //header_row.append(id_header);
             header_row.append(neos_id_header);
+            header_row.append(h_mag_header);
+            header_row.append(hazardous_header);
             table.appendChild(header_row);
 
             response.near_earth_objects.forEach(obj => {
                 const new_row = document.createElement("tr");
                 const td_name = document.createElement("td");
-                const td_id = document.createElement("td");
+                //const td_id = document.createElement("td");
                 const td_neo_reference_id = document.createElement("td");
-
+                const td_h_mag = document.createElement("td");
+                const td_hazardous = document.createElement("td");
                 td_name.textContent = obj.name;
-                td_id.textContent = obj.id;
+                //td_id.textContent = obj.id;
                 td_neo_reference_id.textContent = obj.neo_reference_id;
-
+                td_h_mag.textContent =obj.absolute_magnitude_h;
+                td_hazardous.textContent = obj.is_potentially_hazardous_asteroid;    
                 new_row.appendChild(td_name);
-                new_row.appendChild(td_id);
+                //new_row.appendChild(td_id);
                 new_row.appendChild(td_neo_reference_id);
-
+                new_row.appendChild(td_h_mag);    
+                new_row.append(td_hazardous);
                 table.appendChild(new_row);
             });
         }   
