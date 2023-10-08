@@ -28,6 +28,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         } else if (selectedValue === 'mars-weather') {
             window.location.href = '/mars-weather';
+        
+        }else if (selectedValue === 'neows') {
+            window.location.href = '/neows'
         }
     });
 });

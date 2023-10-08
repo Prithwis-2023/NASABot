@@ -53,5 +53,10 @@ def mars_weather():
 def live():
 	return render_template("live_iss.html")
 
+@app.route('/neows')
+
+def neows():
+	return render_template("neows.html")
+
 if __name__ == '__main__':
 	app.run(debug=True)
