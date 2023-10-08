@@ -82,7 +82,8 @@ Over $464 billion is the current market worth of the global space business, and 
 
    
 ***Swot analysis:***
-  Our user-friendliness and real-time data are our strongest suit. Competition and the requirement for constant content updating are weaknesses. Threats include shifting space policies, while opportunities include the expansion of the space sector.
+  *Our user-friendliness and real-time data are our strongest suit.  
+  *Our greatest opportunity presents itself in the expansion of the space sector.
 
   
 ***Market positioning:***
