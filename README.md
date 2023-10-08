@@ -111,7 +111,7 @@ Over $464 billion is the current market worth of the global space business, and 
 ***Main Screen:***
 This program is designed to work very similar to an internet search engine. To simplify the search process, clicking on the search bar will open the drop-down menu where the user can select the desired type of data they want.
 
-![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/d03a82af-a6c9-46c0-b0ac-ecdec6e3a2be)
+![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/16e5850f-1f7b-42b2-b3d1-15443f63a823)
 
 _The layout of the Openscientia site_
 
@@ -128,7 +128,7 @@ _An Example of the picture of the day for October 7 taken from the API_
 ***Earth Polychromatic Imaging Camera (EPIC):***
 When selecting this option, you get a second prompt asking for a date. You can either type or select a date from the calendar and once you press search, you get a full list of photos from the EPIC from that particular date.
 
-![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/4f9d711d-7243-4d5d-beec-4f6dd5d4a151)
+![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/6fb00c8d-7e42-4806-b5db-bd2922bbc2f7)
 
 _Prompt screen for the EPIC option_
 
