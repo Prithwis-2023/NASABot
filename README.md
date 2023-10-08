@@ -169,8 +169,6 @@ Utilizing this option, you will be taken to an application that allows top-down 
 _Mercury's surface is shown with the various options to fine-tune the data_
 
 
-***Exoplanet Archive:***
-Finally, when selecting this option you obtain a 
 
 ## Impact
 
@@ -215,4 +213,5 @@ In summary, our web application is designed to make NASA data and imagery easily
 
 * https://www.earthdata.nasa.gov/technology/open-science 
 
-Written by Joshua Wong, Safaa Faiz, and Chuah Yee Jia
+Web development by Prithwis Das, Ahmed Dedeler, and Haoxian Kang
+Documentation by Joshua Wong, Safaa Faiz, and Chuah Yee Jia
