@@ -12,6 +12,7 @@ Hey there! Welcome to OpenScientia.
 OpenScientia is a user-friendly web application that allows you to access data directly from NASA archives. 
 Here, you can effortlessly explore various types of data, knowledge, and information with just a few clicks. OpenScientia provides access to data such as displaying the Mars Rover Photos and text-based information from the NASA Media Library. 
 
+
 Check it out at OpenScientia!
 
 ## Problem Statement - What are the issues?
