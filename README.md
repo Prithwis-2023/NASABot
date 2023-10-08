@@ -213,5 +213,6 @@ In summary, our web application is designed to make NASA data and imagery easily
 
 * https://www.earthdata.nasa.gov/technology/open-science 
 
-Web development by Prithwis Das, Ahmed Dedeler, and Haoxian Kang
-Documentation by Joshua Wong, Safaa Faiz, and Chuah Yee Jia
+# Contributors
+- Web Development by Prithwis Das, Ahmed Dedeler, and Haoxian Kang.
+- Documentation by Joshua Wong, Safaa Faiz, and Chuah Yee Jia.
