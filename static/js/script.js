@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', function() {
             
         } else if (selectedValue === 'neows') {
             window.location.href = '/neows'
+        } else if (selectedValue === 'neofeed') {
+            window.location.href = '/neofeed'
         }
     });
 });

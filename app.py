@@ -38,6 +38,11 @@ def epic():
 def neows():
 	return render_template("neows.html")
 
+@app.route('/neofeed')
+
+def neofeed():
+	return render_template("neofeed.html")
+
 
 if __name__ == '__main__':
 	app.run(debug=True)
