@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = '/mars-weather';
         
         }else if (selectedValue === 'neows') {
-            window.location.href = '/neows'
+            window.location.href = '/neows';
         }
     });
 });

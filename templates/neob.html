@@ -1,19 +1,21 @@
 {% extends "layout.html" %}
 
 {% block title %}
-    NeoWs
+    NeoWs-Browse
 {% endblock %}
 
 {% block main %}
     <h1>Near Earth Objects</h1>
     <script src="/static/js/neo.js"></script>
+    <script src="/static/js/neob.js"></script>
+    <!--<script src="/static/js/neob.js"></script>-->
     <hr>
     <div style="align-items: center; justify-content: center; display: flex; flex-direction: row;">
         <button type="button" class="btn btn-success btn-lg" id="browse">NEO Browse</button>
         <div style="padding-left: 30px;"><button type="button" class="btn btn-success btn-lg" id ="feed">NEO Feed</button></div>
     </div>
     <hr>    
-    <!--<div style="height:10%;align-items: center;justify-content: center;display: flex;flex-direction: row;" >
+    <div style="height:10%;align-items: center;justify-content: center;display: flex;flex-direction: row;" >
         <button style="width: 10%;"  id="prev" class="btn btn-outline-success btn-sm" onclick="prevpage()">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>  
@@ -27,6 +29,6 @@
         </button>
     </div>
     <table style="margin-top: 3%;" id="near_earth_object_table">
-    </table>-->
+    </table>
 
 {% endblock %}

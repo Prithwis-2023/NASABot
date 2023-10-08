@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    NeoWs-Feed
+{% endblock %}
+
+{% block main %}
+    <h1>Near Earth Objects</h1>
+    <script src="/static/js/neo.js"></script>
+    <script src="/static/js/neof.js"></script>
+    <!--<script src="/static/js/neob.js"></script>-->
+    <hr>
+    <div style="align-items: center; justify-content: center; display: flex; flex-direction: row;">
+        <button type="button" class="btn btn-success btn-lg" id="browse">NEO Browse</button>
+        <div style="padding-left: 30px;"><button type="button" class="btn btn-success btn-lg" id ="feed">NEO Feed</button></div>
+    </div>
+    <hr>    
+    <div style="align-items: center;justify-content: center;" class="row">
+        <h5 style="width: 10%;margin: 0;">Start</h5>
+        <input style="width: 20%;" type="date" class="form-control" placeholder="Date" aria-label="Date" id="start">
+        <h5 style="width: 10%;margin: 0;">End</h5>
+        <input style="width: 20%;" type="date" class="form-control" placeholder="Date" aria-label="Date" id="end">
+        <button style="width: 15%; margin-left: 3%;"  id="search" class="btn btn-outline-success btn-sm" onclick="get_neo_feed()">
+            Search
+        </button>
+    </div>            
+    <table style="margin-top: 3%;" id="near_earth_object_table">
+    </table>
+
+
+{% endblock %}

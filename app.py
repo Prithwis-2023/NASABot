@@ -58,5 +58,15 @@ def live():
 def neows():
 	return render_template("neows.html")
 
+@app.route('/neob')
+
+def neob():
+	return render_template("neob.html")
+
+@app.route('/neof')
+
+def neof():
+	return render_template("neof.html")
+
 if __name__ == '__main__':
 	app.run(debug=True)

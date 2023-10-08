@@ -12,6 +12,7 @@ req.addEventListener("load", function(){
 
         document.getElementById("page").textContent = page+1;
         document.getElementById("total_page").textContent = total_pages;
+;    
     }   
 });   
 
@@ -29,11 +30,12 @@ function populate(num){
     req.addEventListener("load", function(){
         if(req.status == 200 && req.readyState == 4){
             var response = JSON.parse(req.responseText);
-
+            
+            //table
             let table = document.getElementById("near_earth_object_table");
             table.setAttribute("width", "90%");
             table.innerHTML = "";
-
+            
             console.log(response);
 
             const header_row = document.createElement("tr");
@@ -42,6 +44,7 @@ function populate(num){
             //const neos_id_header = document.createElement("th");
             const h_mag_header = document.createElement("th");
             const relative_vel_header = document.createElement("th");
+            const estimated_diam_header = document.createElement("th");
             const close_approach_header = document.createElement("th");
             const hazardous_header = document.createElement("th");
             name_header.textContent = "Name";
@@ -49,13 +52,15 @@ function populate(num){
             //neos_id_header.textContent = "Neo Reference ID";
             h_mag_header.textContent = "H (Mag)";
             relative_vel_header.textContent = "Relative Velocity (miles/hr)"; 
+            estimated_diam_header.textContent ="Min. Estimated Diameter (miles)"
             close_approach_header.textContent ="Close Approach";
-            hazardous_header.textContent = "Is Potentially Hazardous";
+            hazardous_header.textContent = "Potentially Hazardous";
             header_row.append(name_header);
             //header_row.append(id_header);
             //header_row.append(neos_id_header);
             header_row.append(h_mag_header);
             header_row.append(relative_vel_header);
+            header_row.append(estimated_diam_header);
             header_row.append(close_approach_header);
             header_row.append(hazardous_header);
             table.appendChild(header_row);
@@ -67,6 +72,7 @@ function populate(num){
                 //const td_neo_reference_id = document.createElement("td");
                 const td_h_mag = document.createElement("td");
                 const td_relative_vel = document.createElement("td");
+                const td_estimated_diam = document.createElement("td");
                 const td_close_approach =document.createElement("td");
                 const td_hazardous = document.createElement("td");
                 td_name.textContent = obj.name;
@@ -74,6 +80,7 @@ function populate(num){
                 //td_neo_reference_id.textContent = obj.neo_reference_id;
                 td_h_mag.textContent = obj.absolute_magnitude_h;
                 td_relative_vel.textContent = obj.close_approach_data[0]['relative_velocity'].miles_per_hour;
+                td_estimated_diam.textContent = obj.estimated_diameter['miles'].estimated_diameter_min;
                 td_close_approach.textContent = obj.close_approach_data[0].close_approach_date_full;
                 td_hazardous.textContent = obj.is_potentially_hazardous_asteroid;    
                 new_row.appendChild(td_name);
@@ -81,6 +88,7 @@ function populate(num){
                 //new_row.appendChild(td_neo_reference_id);
                 new_row.appendChild(td_h_mag);
                 new_row.appendChild(td_relative_vel);
+                new_row.appendChild(td_estimated_diam);
                 new_row.appendChild(td_close_approach);    
                 new_row.append(td_hazardous);
                 table.appendChild(new_row);
