@@ -137,13 +137,20 @@ On the side of each image, there are arrows that allow you to change the image t
 _Example of the type of images taken from EPIC that can be displayed_
 
 
-***Earth-based imagery:***
-Submitting this option will give you a prompt for entering the latitude, longitude, dimension, and date. Enter the respective information and you will obtain top-down imagery of the location specified by the latitude and longitude coordinates on that date.
+***Near earth object web service:***
+This prompt allows users to be directed to the database for near earth objects. Submitting this option will give you 2 options represented by green buttons. 
 
-![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/27ba5cac-c1db-4e9f-9bc0-4a0b11f75de4)
+The first option "NEO browse" is preselected bt default and it gives a datasheet of near earth objects including name, magnitude, relative velocity, minimum estimated diameter, close approach, and if the object is potentially hazardous. Users can cycle through pages with the arrows on top.
 
-_The prompt screen for earth-based imagery_
+![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/ddbbebf0-91d8-4d28-96e5-440fcca60074)
 
+_The display screen for the NEO Browse option_
+
+Selecting the "NEO feed" button gives you a prompt screen for 2 dates. 
+
+![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/c191a289-682d-4264-a99e-fda3bd8ac5f7)
+
+_The prompt screen for NEO feed
 
 ***Mars rover Photos:***
 This prompt will require the sol or day on Mars and a selection of camera options. Sol represents the martian days that the Curiosity rover has been on Mars and a number can be entered to select the exact day that the photos are taken. The select camera allows the user to find the image based on the camera used on the Curiosity rover to take the image. 
