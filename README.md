@@ -47,9 +47,6 @@ Our web application called OpenScientia is designed to make accessing data quick
 
 ## Market analysis
 
-***Market size:***
-Over $464 billion is the current market worth of the global space business, and due to rising government and private sector initiatives, there is substantial room for expansion.
-
 
 ***Target audience:***
 - Space enthusiasts
@@ -140,15 +137,15 @@ _Example of the type of images taken from EPIC that can be displayed_
 
 
 ***Near Earth Object Web Service:***
-Submitting this option will give you 2 green buttons labelled "NEO Browse" and "NEO Feed". 
+Submitting this option will give you 2 green buttons labeled "NEO Browse" and "NEO Feed". 
 
-NEO browse pulls up the full database of near earth objects recorded since the year 1900. This gives you the name, magnitude, Relative velocity, minimum estimated data, close approach date, and potential hazard of the near earth objects.
+NEO browse pulls up the full database of near-earth objects recorded since the year 1900. This gives you the name, magnitude, Relative velocity, minimum estimated data, close approach date, and potential hazard of the near-earth objects.
 
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/73a55b33-7930-4c59-ba82-92a55daa80f7)
 
 _The datasheet returned from selecting NEO browse_
 
-NEO feed allows the user to see the list of near earth objects for a given period between 2 entered dates. It features their name, ID, diameter, closest approach time, velocity, miss distance, magnitude, and if its hazardous
+NEO feed allows the user to see the list of near-earth objects for a given period between 2 entered dates. It features their name, ID, diameter, closest approach time, velocity, miss distance, magnitude, and if it is hazardous
 
 ![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/2648140b-3c6e-4290-b8e0-cbd2357612f1)
 
@@ -215,8 +212,6 @@ In summary, our web application is designed to make NASA data and imagery easily
 
 * https://en.wikipedia.org/wiki/Titanic
   
-* https://www.euroconsult-ec.com/press-release/value-of-space-economy-reaches-424-billion-in-2022-despite-new-unforeseen-investment-concerns-2/
-
 * https://api.nasa.gov/
 
 * https://mars.nasa.gov/msl/weather/
