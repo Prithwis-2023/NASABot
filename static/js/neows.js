@@ -31,7 +31,7 @@ function populate(num){
             var response = JSON.parse(req.responseText);
 
             let table = document.getElementById("near_earth_object_table");
-            table.setAttribute("width", "80%");
+            table.setAttribute("width", "90%");
             table.innerHTML = "";
 
             console.log(response);
@@ -39,18 +39,24 @@ function populate(num){
             const header_row = document.createElement("tr");
             const name_header = document.createElement("th");
             //const id_header = document.createElement("th");
-            const neos_id_header = document.createElement("th");
+            //const neos_id_header = document.createElement("th");
             const h_mag_header = document.createElement("th");
+            const relative_vel_header = document.createElement("th");
+            const close_approach_header = document.createElement("th");
             const hazardous_header = document.createElement("th");
             name_header.textContent = "Name";
             //id_header.textContent = "ID";
-            neos_id_header.textContent = "Neo Reference ID";
-            h_mag_header.textContent ="H (Mag)";
+            //neos_id_header.textContent = "Neo Reference ID";
+            h_mag_header.textContent = "H (Mag)";
+            relative_vel_header.textContent = "Relative Velocity (miles/hr)"; 
+            close_approach_header.textContent ="Close Approach";
             hazardous_header.textContent = "Is Potentially Hazardous";
             header_row.append(name_header);
             //header_row.append(id_header);
-            header_row.append(neos_id_header);
+            //header_row.append(neos_id_header);
             header_row.append(h_mag_header);
+            header_row.append(relative_vel_header);
+            header_row.append(close_approach_header);
             header_row.append(hazardous_header);
             table.appendChild(header_row);
 
@@ -58,18 +64,24 @@ function populate(num){
                 const new_row = document.createElement("tr");
                 const td_name = document.createElement("td");
                 //const td_id = document.createElement("td");
-                const td_neo_reference_id = document.createElement("td");
+                //const td_neo_reference_id = document.createElement("td");
                 const td_h_mag = document.createElement("td");
+                const td_relative_vel = document.createElement("td");
+                const td_close_approach =document.createElement("td");
                 const td_hazardous = document.createElement("td");
                 td_name.textContent = obj.name;
                 //td_id.textContent = obj.id;
-                td_neo_reference_id.textContent = obj.neo_reference_id;
-                td_h_mag.textContent =obj.absolute_magnitude_h;
+                //td_neo_reference_id.textContent = obj.neo_reference_id;
+                td_h_mag.textContent = obj.absolute_magnitude_h;
+                td_relative_vel.textContent = obj.close_approach_data[0]['relative_velocity'].miles_per_hour;
+                td_close_approach.textContent = obj.close_approach_data[0].close_approach_date_full;
                 td_hazardous.textContent = obj.is_potentially_hazardous_asteroid;    
                 new_row.appendChild(td_name);
                 //new_row.appendChild(td_id);
-                new_row.appendChild(td_neo_reference_id);
-                new_row.appendChild(td_h_mag);    
+                //new_row.appendChild(td_neo_reference_id);
+                new_row.appendChild(td_h_mag);
+                new_row.appendChild(td_relative_vel);
+                new_row.appendChild(td_close_approach);    
                 new_row.append(td_hazardous);
                 table.appendChild(new_row);
             });
