@@ -47,9 +47,6 @@ Our web application called OpenScientia is designed to make accessing data quick
 
 ## Market analysis
 
-***Market size:***
-Over $464 billion is the current market worth of the global space business, and due to rising government and private sector initiatives, there is substantial room for expansion.
-
 
 ***Target audience:***
 - Space enthusiasts
@@ -65,9 +62,6 @@ Over $464 billion is the current market worth of the global space business, and 
 ***Unique proposition:***
   In contrast to conventional static space websites, our web application provides a user-friendly and dynamic platform for users to explore real-time space data, instructional content, and community involvement.
 
-  
-***Market entry strategy:***
-  To get started, we intend to debut with a substantial content library.
 
   
 ***Pricing strategy:***
@@ -90,9 +84,6 @@ Over $464 billion is the current market worth of the global space business, and 
 ***Market positioning:***
   We present ourselves as the leading platform for engaging space exploration and education, with messaging emphasizing user participation and real-time data availability.
 
-  
-***Marketing budget:***
-  A budget of $60,000 for the initial marketing campaign.
   
 
 ## Marketing strategy
@@ -215,8 +206,6 @@ In summary, our web application is designed to make NASA data and imagery easily
 
 * https://en.wikipedia.org/wiki/Titanic
   
-* https://www.euroconsult-ec.com/press-release/value-of-space-economy-reaches-424-billion-in-2022-despite-new-unforeseen-investment-concerns-2/
-
 * https://api.nasa.gov/
 
 * https://mars.nasa.gov/msl/weather/
