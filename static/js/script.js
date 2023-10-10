@@ -31,6 +31,10 @@ document.addEventListener('DOMContentLoaded', function() {
         
         }else if (selectedValue === 'neows') {
             window.location.href = '/neows';
+        
+        } else if (selectedValue === 'tracker') {
+            window.location.href = '/tracker';
         }
+
     });
 });

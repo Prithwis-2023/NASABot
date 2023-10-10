@@ -68,5 +68,11 @@ def neob():
 def neof():
 	return render_template("neof.html")
 
+@app.route('/tracker')
+
+def tracker():
+	return render_template("tracker.html")
+
+
 if __name__ == '__main__':
 	app.run(debug=True)
