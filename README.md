@@ -47,9 +47,6 @@ Our web application called OpenScientia is designed to make accessing data quick
 
 ## Market analysis
 
-***Market size:***
-Over $464 billion is the current market worth of the global space business, and due to rising government and private sector initiatives, there is substantial room for expansion.
-
 
 ***Target audience:***
 - Space enthusiasts
@@ -89,10 +86,6 @@ Over $464 billion is the current market worth of the global space business, and 
   
 ***Market positioning:***
   We present ourselves as the leading platform for engaging space exploration and education, with messaging emphasizing user participation and real-time data availability.
-
-  
-***Marketing budget:***
-  A budget of $60,000 for the initial marketing campaign.
   
 
 ## Marketing strategy
@@ -150,7 +143,7 @@ _The datasheet returned from selecting NEO browse_
 
 NEO feed allows the user to see the list of near earth objects for a given period between 2 entered dates. It features their name, ID, diameter, closest approach time, velocity, miss distance, magnitude, and if its hazardous
 
-![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/dcc9d6b3-f447-41b4-90a3-2538c48093c0)
+![image](https://github.com/Prithwis-2023/NASABot/assets/77130205/b505c27b-3669-4018-958d-cf6302e65d3d)
 
 _The prompt screen for NEO Feed. It is very important that the dates entered are no more than 7 days apart_
 
@@ -214,8 +207,6 @@ In summary, our web application is designed to make NASA data and imagery easily
 ## References
 
 * https://en.wikipedia.org/wiki/Titanic
-  
-* https://www.euroconsult-ec.com/press-release/value-of-space-economy-reaches-424-billion-in-2022-despite-new-unforeseen-investment-concerns-2/
 
 * https://api.nasa.gov/
 
