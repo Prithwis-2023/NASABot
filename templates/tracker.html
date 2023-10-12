@@ -1,8 +1,12 @@
 {% extends "layout.html" %}
 
+{% block title %}
+    ISS
+{% endblock %}    
+
 {% block main %}
-    <link rel="stylesheet" type="text/css" href="/static/space.css">
+    <link rel="stylesheet" type="text/css" href="/css/space.css">
     <div id="canvas"></div>
     <span id="pre-status">Loading page...</span>
-    <script src="/static/js/main.js"></script>
+    <script src="/js/main.js"></script>
 {% endblock %}
