@@ -37,13 +37,13 @@ window.HUDScene = class {
         this.timeline.push({"speed": 350, "name": "%sx SPEED"});
         this.timeline.push({"speed": 500, "name": "%sx SPEED"});
 
-        this.textureSatellite = this.createImage("assets/img/hud/satellite.png");
-        this.textureISS = this.createImage("assets/img/hud/iss.png");
-        this.textureEarth = this.createImage("assets/img/hud/earth.png");
-        this.textureMinus = this.createImage("assets/img/hud/minus.png");
-        this.texturePlus = this.createImage("assets/img/hud/plus.png");
-        this.textureDock = this.createImage("assets/img/hud/dock.png");
-        this.textureTime = this.createImage("assets/img/hud/time.png");
+        this.textureSatellite = this.createImage("/static/assets/img/hud/satellite.png");
+        this.textureISS = this.createImage("/static/assets/img/hud/iss.png");
+        this.textureEarth = this.createImage("/static/assets/img/hud/earth.png");
+        this.textureMinus = this.createImage("/static/assets/img/hud/minus.png");
+        this.texturePlus = this.createImage("/static/assets/img/hud/plus.png");
+        this.textureDock = this.createImage("/static/assets/img/hud/dock.png");
+        this.textureTime = this.createImage("/static/assets/img/hud/time.png");
     }
 
     createHUDScene(hudCanvas, cameraHUD) {

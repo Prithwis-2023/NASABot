@@ -33,7 +33,7 @@ window.SatelliteRegistry = class {
      * @param callback
      */
     loadLocalTLE(id, callback) {
-        $.get("assets/tle/" + id + ".txt", function (data) {
+        $.get("/static/assets/tle/" + id + ".txt", function (data) {
             callback(data.split("\n"));
         });
     }

@@ -46,7 +46,7 @@ window.SatelliteModel = class {
         this.loadModel(id, state, successCallback, callback, function (error) {
 
             // Load pointer
-            $.get('assets/models/' + id + '/pointer.id', function (data, status) {
+            $.get('/static/assets/models/' + id + '/pointer.id', function (data, status) {
 
                 // Load pointed model
                 scope.loadModel(data, state, successCallback, callback, function (error) {
@@ -74,7 +74,7 @@ window.SatelliteModel = class {
         this.label.add(labelName);
 
         // Marker circle
-        const markerTextureMap = satelliteTracker.textureLoader.load("assets/img/marker.png");
+        const markerTextureMap = satelliteTracker.textureLoader.load("/static/assets/img/marker.png");
         const markerMaterial = new THREE.SpriteMaterial({
             map: markerTextureMap,
             color: 0xffffff,
@@ -125,7 +125,7 @@ window.SatelliteModel = class {
     }
 
     loadModel(id, state, successCallback, progressCallback, errorCallback) {
-        this.satelliteTracker.gltfLoader.load('assets/models/' + id + '/' + state + '.glb', successCallback, function (xhr) {
+        this.satelliteTracker.gltfLoader.load('/static/assets/models/' + id + '/' + state + '.glb', successCallback, function (xhr) {
             // Report the model loading progress
             progressCallback(false, 100 / xhr.total * xhr.loaded);
         }, function (error) {

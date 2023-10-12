@@ -226,8 +226,8 @@ window.SpaceScene = class {
 
     createAtmosphereMaterial(callback) {
         const loader = new THREE.FileLoader();
-        loader.load("assets/shaders/atmosphere.frag", function (fragmentShader) {
-            loader.load("assets/shaders/atmosphere.vert", function (vertexShader) {
+        loader.load("/static/assets/shaders/atmosphere.frag", function (fragmentShader) {
+            loader.load("/static/assets/shaders/atmosphere.vert", function (vertexShader) {
                 const material = new THREE.ShaderMaterial({
                     uniforms: THREE.UniformsUtils.merge([
                         THREE.UniformsLib.shadowmap,
@@ -272,8 +272,8 @@ window.SpaceScene = class {
         nightTexture.minFilter = THREE.LinearMipMapLinearFilter;
 
         const loader = new THREE.FileLoader();
-        loader.load("assets/shaders/nightside.frag", function (fragmentShader) {
-            loader.load("assets/shaders/nightside.vert", function (vertexShader) {
+        loader.load("/static/assets/shaders/nightside.frag", function (fragmentShader) {
+            loader.load("/static/assets/shaders/nightside.vert", function (vertexShader) {
                 const uniforms = {
                     viewVector: {value: new THREE.Vector3(0, 0, 0)},
                     nightTexture: {value: nightTexture},
