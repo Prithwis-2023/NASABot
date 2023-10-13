@@ -73,6 +73,10 @@ def neof():
 def tracker():
 	return render_template("tracker.html")
 
+@app.route('/sbdb')
+
+def sbdb():
+	return render_template("sbdb.html")
 
 if __name__ == '__main__':
 	app.run(debug=True)

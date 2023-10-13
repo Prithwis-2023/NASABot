@@ -34,6 +34,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         } else if (selectedValue === 'tracker') {
             window.location.href = '/tracker';
+        
+        } else if (selectedValue === 'sbdb') {
+            window.location.href = '/sbdb';
         }
 
     });

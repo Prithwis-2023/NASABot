@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    SBDB
+{% endblock %}
+
+{% block main %}
+    <script src="/static/js/sbdb.js"></script>
+    <!--date-min, date-max, dist-min, dist-max, min-dist-min, min-dist-max, h-min, h-max, 
+        v-inf-min, v-inf-max, v-rel-min, v-rel-max, class, pha, nea, comet, nea-comet, neo, 
+        kind, spk, des, body, sort, limit, limit-from, total-only, diameter, fullname-->
+
+    <div class="row">
+        <div class="col" style="padding-right: 10px;">
+            <input type="date" class="form-control" placeholder="Start Date" aria-label="Start Date" id="sdt" required>
+        </div>
+        <div class="col">
+            <input type="date" class="form-control" placeholder="End Date" aria-label="End Date" id="edt" required>
+        </div>
+    </div>        
+    <div class="row" style="padding-top: 10px;">
+        <div class="col">
+            <input type="number" class="form-control" placeholder="Max. Approach Distance (in AU)" aria-label="Min. Approach Distance (in AU)" id="minad">
+        </div>
+        <div class="col">
+            <input type="number" class="form-control" placeholder="Max. Approach Distance (in AU)" aria-label="Max. Approach Distance (in AU)" id="maxad">
+        </div>
+    </div>         
+    <div class="row" style="padding-top: 10px;">
+        <div class="col">
+            <input type="number" class="form-control" placeholder="Min. Minimum Approach Distance (in AU)" aria-label="Min. Minimum Approach Distance (in AU)" id="minminad">
+        </div>
+        <div class="col">
+            <input type="number" class="form-control" placeholder="Max. Minimum Approach Distance (in AU)" aria-label="Max. Minimum Approach Distance (in AU)" id="maxminad">
+        </div>
+    </div>         
+{% endblock %}
