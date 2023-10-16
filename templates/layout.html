@@ -34,7 +34,10 @@
                         <a class="nav-link active" aria-current="page" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" href="#">Space Games</a>
+                        <a class="nav-link active" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop1" aria-controls="offcanvasTop" href="#">Weather</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop2" aria-controls="offcanvasTop" href="#">Space Games</a>
                     </li>
                 </ul>
                 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
@@ -49,13 +52,16 @@
                         <p align="left">Welcome to OpenScientia! Embark on a fascinating journey through the cosmos with Openscientia. Our mission is to arouse your curiosity about the mysteries of space by bring the wonders of the universe closer to you, providing a unique and immersive experience. At OpenScientia, we believe that space exploration is for everybody and not only limited to astronauts and scientists. Whether you are an experienced astronomer or just taking your first steps into the stars, OpenScientia is your gateway to the sky!</p>
                     </div>
                 </div>
-                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop1" aria-labelledby="offcanvasTopLabel" style="background-image: url(/static/cosmos.jpg);">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasTopLabel">Offcanvas top</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <!--<h5 class="offcanvas-title" id="offcanvasTopLabel">Weather</h5>-->
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" style="color: white;"></button>
                     </div>
                     <div class="offcanvas-body">
-                        
+                        <center><button onclick="getLocation()" type="button" class="btn btn-primary btn-lg">Real-Time Weather Data</button></center>
+                        <hr style="color: white;">
+                        <p id="demo"></p>
+                        <script src="/static/js/maps.js"></script>
                     </div>
                 </div>
             </div>
