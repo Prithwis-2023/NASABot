@@ -55,6 +55,7 @@ function showPosition(position) {
         const header_row25 = document.createElement('tr');
 
         const datetime_header = document.createElement('th');
+        const datetime_content = document.createElement('td');
         const phrase_header = document.createElement('th');
         const hasprecipitation_header = document.createElement('th');
         const isdaytime_header = document.createElement('th');
@@ -82,6 +83,7 @@ function showPosition(position) {
         const temperaturesummary_header = document.createElement('th');
 
         datetime_header.textContent = "Date and Time";
+        datetime_content.textContent = "-"
         phrase_header.textContent = "Phrase";
         hasprecipitation_header.textContent = "Has Precipitation";
         isdaytime_header.textContent = "Is Daytime";
@@ -109,6 +111,7 @@ function showPosition(position) {
         temperaturesummary_header.textContent = "Temperature Summary";
 
         header_row0.append(datetime_header);
+        header_row0.append(datetime_content);
         header_row1.append(phrase_header);
         header_row2.append(hasprecipitation_header);
         header_row3.append(isdaytime_header);
