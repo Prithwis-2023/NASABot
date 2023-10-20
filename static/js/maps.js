@@ -22,7 +22,7 @@ function showPosition(position) {
   req.addEventListener("load", function(){
     if(req.status == 200 && req.readyState == 4){
         var response = JSON.parse(req.responseText);
-        
+        let plot = document.getElementById('Ploti');
         let table = document.getElementById('present-weather');
         //table.setAttribute("width", "90%");
         table.innerHTML = "";
