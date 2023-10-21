@@ -22,7 +22,7 @@ function showPosition(position) {
   req.addEventListener("load", function(){
     if(req.status == 200 && req.readyState == 4){
         var response = JSON.parse(req.responseText);
-        let plot = document.getElementById('Ploti');
+        //let plot = document.getElementById('Ploti');
         let table = document.getElementById('present-weather');
         //table.setAttribute("width", "90%");
         table.innerHTML = "";
@@ -239,6 +239,53 @@ function showPosition(position) {
         table.appendChild(header_row23);
         table.appendChild(header_row24);
         table.appendChild(header_row25);
+
+        const xArray = ["Past 6 Hours", "Past 12 Hours", "Past 24 Hours"];
+        const yArray_min = [response["results"][0]["temperatureSummary"]["past6Hours"]["minimum"].value, response["results"][0]["temperatureSummary"]["past12Hours"]["minimum"].value, response["results"][0]["temperatureSummary"]["past24Hours"]["minimum"].value];
+        const yArray_max = [response["results"][0]["temperatureSummary"]["past6Hours"]["maximum"].value, response["results"][0]["temperatureSummary"]["past12Hours"]["maximum"].value, response["results"][0]["temperatureSummary"]["past24Hours"]["maximum"].value];
+        
+        // Define Data
+        const data0 = [{
+          x: xArray,
+          y: yArray_min,
+          mode:"lines",
+          name: "Minimum"
+        },
+        {
+          x: xArray,
+          y: yArray_max,
+          mode:"lines",
+          name: "Maximum"
+        }];
+
+        // Define Layout
+        const layout0 = {
+          xaxis: {title: "Records over Past Hours"},
+          yaxis: {title: "Temperature (in degrees C)"},  
+          title: "Temperature Variations"
+        };
+
+        // Display using Plotly
+        Plotly.newPlot("Ploti", data0, layout0);
+
+        const xArray_preci = ["Past Hour", "Past 3 Hours", "Past 6 Hours", "Past 9 Hours", "Past 12 Hours", "Past 18 Hours", "Past 24 Hours"];
+        const yArray_preci = [response["results"][0]["precipitationSummary"]["pastHour"].value, response["results"][0]["precipitationSummary"]["past3Hours"].value, response["results"][0]["precipitationSummary"]["past6Hours"].value, response["results"][0]["precipitationSummary"]["past9Hours"].value, response["results"][0]["precipitationSummary"]["past12Hours"].value, response["results"][0]["precipitationSummary"]["past18Hours"].value, response["results"][0]["precipitationSummary"]["past24Hours"].value];
+
+        const data1 = [{
+          x: xArray_preci,
+          y: yArray_preci,
+          mode:"lines"
+        }];
+
+        // Define Layout
+        const layout1 = {
+          xaxis: {title: "Records over Past Hours"},
+          yaxis: {title: "Precipitation (in mm)"},  
+          title: "Variations in Precipitation"
+        };
+
+        // Display using Plotly
+        Plotly.newPlot("Plotii", data1, layout1);
     }
   });      
 }

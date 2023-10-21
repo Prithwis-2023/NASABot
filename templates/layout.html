@@ -62,10 +62,34 @@
                         <center><button onclick="getLocation()" type="button" class="btn btn-outline-success btn-lg">Real-Time Weather Data</button></center>
                         <hr style="color: white;">
                         <script src="/static/js/maps.js"></script>
+                        <style>
+                            * {
+                            box-sizing: border-box;
+                            }
+
+                            .row {
+                            display: flex;
+                            }
+
+                            /* Create three equal columns that sits next to each other */
+                            .column {
+                            flex: 50%;
+                            padding: 5px;
+                            }    
+                        </style>  
+                        <div class="row">
+                            <div class="column">
+                                <div id="Ploti" style="width: 100%;"></div>
+                            </div>
+                            <div class="column">
+                                <div id="Plotii" style="width:100%"></div>
+                            </div>
+                        </div>
                         <center>
+                            <hr style="color: white;">
                             <table class="table table-dark table-hover table-bordered border-primary" id="present-weather" style="max-width: 70%; border: 1.5px solid blue;">
                             </table>
-                        </center>    
+                        </center> 
                     </div>
                 </div>
             </div>
