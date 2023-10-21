@@ -59,11 +59,11 @@
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close" style="color: white;"></button>
                     </div>
                     <div class="offcanvas-body" id="weather">
-                        <center><button onclick="getLocation()" type="button" class="btn btn-primary btn-lg">Real-Time Weather Data</button></center>
+                        <center><button onclick="getLocation()" type="button" class="btn btn-outline-success btn-lg">Real-Time Weather Data</button></center>
                         <hr style="color: white;">
                         <script src="/static/js/maps.js"></script>
                         <center>
-                            <table class="table table-dark table-hover" id="present-weather">
+                            <table class="table table-dark table-hover table-bordered border-primary" id="present-weather" style="max-width: 70%; border: 1.5px solid blue;">
                             </table>
                         </center>    
                     </div>
