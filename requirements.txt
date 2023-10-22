@@ -1,2 +1,7 @@
 flask
 gunicorn
+pystac_client
+planetary_computer
+rioxarray
+xarray-spatial
+datashader
