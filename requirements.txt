@@ -5,3 +5,4 @@ planetary_computer
 rioxarray
 xarray-spatial
 datashader
+nbinteract
