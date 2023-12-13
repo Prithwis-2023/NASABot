@@ -102,10 +102,10 @@ function showPosition(position) {
         const windchilltemperature_content = document.createElement('td');
         const wetbulbtemperature_header = document.createElement('th');
         const wetbulbtemperature_content = document.createElement('td');
-        const precipitationsummary_header = document.createElement('th');
-        const precipitationsummary_content = document.createElement('td');
-        const temperaturesummary_header = document.createElement('th');
-        const temperaturesummary_content = document.createElement('td');
+        //const precipitationsummary_header = document.createElement('th');
+        //const precipitationsummary_content = document.createElement('td');
+        //const temperaturesummary_header = document.createElement('th');
+        //const temperaturesummary_content = document.createElement('td');
 
         datetime_header.textContent = "Date and Time";
         datetime_content.textContent = response["results"][0].dateTime;
@@ -155,10 +155,10 @@ function showPosition(position) {
         windchilltemperature_content.textContent = response["results"][0]["windChillTemperature"].value + " degrees " + response["results"][0]["windChillTemperature"].unit;
         wetbulbtemperature_header.textContent = "Wet Bulb Temperature";
         wetbulbtemperature_content.textContent = response["results"][0]["wetBulbTemperature"].value  + " degrees " + response["results"][0]["wetBulbTemperature"].unit; 
-        precipitationsummary_header.textContent = "Precipitation Summary";
-        precipitationsummary_content.textContent = "Past Hour: " + response["results"][0]["precipitationSummary"]["pastHour"].value + " " + response["results"][0]["precipitationSummary"]["pastHour"].unit + " | " + "Past 3 Hours: " + response["results"][0]["precipitationSummary"]["past3Hours"].value + " " + response["results"][0]["precipitationSummary"]["past3Hours"].unit + " | " + "Past 6 Hours: " + response["results"][0]["precipitationSummary"]["past6Hours"].value + " " + response["results"][0]["precipitationSummary"]["past6Hours"].unit + " | " + "Past 9 Hours: " + response["results"][0]["precipitationSummary"]["past9Hours"].value + " " + response["results"][0]["precipitationSummary"]["past9Hours"].unit + " | " + "Past 12 Hours: " + response["results"][0]["precipitationSummary"]["past12Hours"].value + " " + response["results"][0]["precipitationSummary"]["past12Hours"].unit + " | " + "Past 18 Hours: " + response["results"][0]["precipitationSummary"]["past18Hours"].value + " " + response["results"][0]["precipitationSummary"]["past18Hours"].unit + " | " + "Past 24 Hours: " + response["results"][0]["precipitationSummary"]["past24Hours"].value + " " + response["results"][0]["precipitationSummary"]["past24Hours"].unit;
-        temperaturesummary_header.textContent = "Temperature Summary";
-        temperaturesummary_content.textContent = "Past 6 Hours - Min: " + response["results"][0]["temperatureSummary"]["past6Hours"]["minimum"].value + " degrees " + response["results"][0]["temperatureSummary"]["past6Hours"]["minimum"].unit + ", " + "Max: " + response["results"][0]["temperatureSummary"]["past6Hours"]["maximum"].value + " degrees " + response["results"][0]["temperatureSummary"]["past6Hours"]["maximum"].unit + " | " + "Past 12 Hours - Min: " + response["results"][0]["temperatureSummary"]["past12Hours"]["minimum"].value + " degrees " + response["results"][0]["temperatureSummary"]["past12Hours"]["minimum"].unit + ", " + "Max: " + response["results"][0]["temperatureSummary"]["past12Hours"]["maximum"].value + " degrees " + response["results"][0]["temperatureSummary"]["past12Hours"]["maximum"].unit + " | " + "Past 24 Hours - Min: " + response["results"][0]["temperatureSummary"]["past24Hours"]["minimum"].value + " degrees " + response["results"][0]["temperatureSummary"]["past24Hours"]["minimum"].unit + ", " + "Max: " + response["results"][0]["temperatureSummary"]["past24Hours"]["maximum"].value + " degrees " + response["results"][0]["temperatureSummary"]["past24Hours"]["maximum"].unit;
+        //precipitationsummary_header.textContent = "Precipitation Summary";
+        //precipitationsummary_content.textContent = "Past Hour: " + response["results"][0]["precipitationSummary"]["pastHour"].value + " " + response["results"][0]["precipitationSummary"]["pastHour"].unit + " | " + "Past 3 Hours: " + response["results"][0]["precipitationSummary"]["past3Hours"].value + " " + response["results"][0]["precipitationSummary"]["past3Hours"].unit + " | " + "Past 6 Hours: " + response["results"][0]["precipitationSummary"]["past6Hours"].value + " " + response["results"][0]["precipitationSummary"]["past6Hours"].unit + " | " + "Past 9 Hours: " + response["results"][0]["precipitationSummary"]["past9Hours"].value + " " + response["results"][0]["precipitationSummary"]["past9Hours"].unit + " | " + "Past 12 Hours: " + response["results"][0]["precipitationSummary"]["past12Hours"].value + " " + response["results"][0]["precipitationSummary"]["past12Hours"].unit + " | " + "Past 18 Hours: " + response["results"][0]["precipitationSummary"]["past18Hours"].value + " " + response["results"][0]["precipitationSummary"]["past18Hours"].unit + " | " + "Past 24 Hours: " + response["results"][0]["precipitationSummary"]["past24Hours"].value + " " + response["results"][0]["precipitationSummary"]["past24Hours"].unit;
+        //temperaturesummary_header.textContent = "Temperature Summary";
+        //temperaturesummary_content.textContent = "Past 6 Hours - Min: " + response["results"][0]["temperatureSummary"]["past6Hours"]["minimum"].value + " degrees " + response["results"][0]["temperatureSummary"]["past6Hours"]["minimum"].unit + ", " + "Max: " + response["results"][0]["temperatureSummary"]["past6Hours"]["maximum"].value + " degrees " + response["results"][0]["temperatureSummary"]["past6Hours"]["maximum"].unit + " | " + "Past 12 Hours - Min: " + response["results"][0]["temperatureSummary"]["past12Hours"]["minimum"].value + " degrees " + response["results"][0]["temperatureSummary"]["past12Hours"]["minimum"].unit + ", " + "Max: " + response["results"][0]["temperatureSummary"]["past12Hours"]["maximum"].value + " degrees " + response["results"][0]["temperatureSummary"]["past12Hours"]["maximum"].unit + " | " + "Past 24 Hours - Min: " + response["results"][0]["temperatureSummary"]["past24Hours"]["minimum"].value + " degrees " + response["results"][0]["temperatureSummary"]["past24Hours"]["minimum"].unit + ", " + "Max: " + response["results"][0]["temperatureSummary"]["past24Hours"]["maximum"].value + " degrees " + response["results"][0]["temperatureSummary"]["past24Hours"]["maximum"].unit;
 
         header_row0.append(datetime_header);
         header_row0.append(datetime_content);
@@ -208,10 +208,10 @@ function showPosition(position) {
         header_row22.append(windchilltemperature_content);
         header_row23.append(wetbulbtemperature_header);
         header_row23.append(wetbulbtemperature_content);
-        header_row24.append(precipitationsummary_header);
-        header_row24.append(precipitationsummary_content);
-        header_row25.append(temperaturesummary_header);
-        header_row25.append(temperaturesummary_content)
+        //header_row24.append(precipitationsummary_header);
+        //header_row24.append(precipitationsummary_content);
+        //header_row25.append(temperaturesummary_header);
+        //header_row25.append(temperaturesummary_content)
         
         table.appendChild(header_row0);
         table.appendChild(header_row1);
@@ -237,8 +237,8 @@ function showPosition(position) {
         table.appendChild(header_row21);
         table.appendChild(header_row22);
         table.appendChild(header_row23);
-        table.appendChild(header_row24);
-        table.appendChild(header_row25);
+        //table.appendChild(header_row24);
+        //table.appendChild(header_row25);
 
         const xArray = ["Past 6 Hours", "Past 12 Hours", "Past 24 Hours"];
         const yArray_min = [response["results"][0]["temperatureSummary"]["past6Hours"]["minimum"].value, response["results"][0]["temperatureSummary"]["past12Hours"]["minimum"].value, response["results"][0]["temperatureSummary"]["past24Hours"]["minimum"].value];

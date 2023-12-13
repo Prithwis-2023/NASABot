@@ -33,7 +33,7 @@ function populate(num){
             
             //table
             let table = document.getElementById("near_earth_object_table");
-            table.setAttribute("width", "90%");
+            table.setAttribute("width", "100%");
             table.innerHTML = "";
             
             console.log(response);
