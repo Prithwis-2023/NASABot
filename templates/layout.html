@@ -40,10 +40,27 @@
                     <li class="nav-item">
                         <a class="nav-link active" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop2" aria-controls="offcanvasTop" href="#">Planetary Computer</a>
                     </li>
-                    <!--<li class="nav-item">
-                        <a class="nav-link active" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop3" aria-controls="offcanvasTop" href="https://prithwis-2023.github.io/OpenScientia/">Docs</a>
-                    </li>-->
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop3" aria-controls="offcanvasTop" href="">Space News</a>
+                    </li>
                 </ul>
+
+                <!--<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button>-->
+                <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" tabindex="-1" id="offcanvasTop3" aria-labelledby="offcanvasTopLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasTopLabel">
+                            <button type="button" class="btn btn-outline-danger" id="news-button">Astronomy News Alert</button>
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <hr>
+                    <div class="offcanvas-body">
+                        <p id="news">
+                            <script src="/static/js/news.js"></script>
+                        </p>
+                    </div>
+                </div>
+
                 <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
                     <div class="offcanvas-header">
                         <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">About</h5>
@@ -58,6 +75,7 @@
                         <center><a href="https://prithwis-2023.github.io/OpenScientia/"><button type="button" class="btn btn-outline-info">View Docs</button></a></center>
                     </div>
                 </div>
+
                 <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop1" aria-labelledby="offcanvasTopLabel" style="background-image: url(/static/northern_lights.jpg); min-height: 100%;">
                     <div class="offcanvas-header">
                         <!--<h5 class="offcanvas-title" id="offcanvasTopLabel">Weather</h5>-->
