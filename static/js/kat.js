@@ -16,9 +16,15 @@ document.addEventListener('DOMContentLoaded', function() {
             //const prompt = "Write a story about a magic backpack."
             //const prompt = document.getElementById('exampleFormControlTextarea1').value;
             //console.log(prompt);    
-            const result = await model.generateContent(prompt);
-            const response = await result.response;
-            const text = response.text();
+            const result = await model.generateContentStream(prompt);
+            let text = '';
+            for await (const chunk of result.stream) {
+                const chunkText = chunk.text();
+                console.log(chunkText);
+                text += chunkText;
+            }
+            //const response = await result.response;
+            //const text = response.text();
             console.log(text);
             res = text;
 
