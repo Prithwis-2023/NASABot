@@ -78,5 +78,10 @@ def tracker():
 def sbdb():
 	return render_template("sbdb.html")
 
+@app.route('/techport')
+
+def techport():
+	return render_template("techport.html")
+
 if __name__ == '__main__':
 	app.run(debug=True)

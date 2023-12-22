@@ -37,7 +37,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         } else if (selectedValue === 'sbdb') {
             window.location.href = '/sbdb';
+        
+        } else if (selectedValue === 'techport') {
+            window.location.href = '/techport';
         }
-
     });
 });
