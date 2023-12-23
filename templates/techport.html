@@ -5,5 +5,25 @@
 {% endblock %}
 
 {% block main %}
-    
+    <div class="row">
+        <div class="col">
+            <input type="number" class="form-control" placeholder="Project ID" aria-label="Project ID" id="projectID" style="width: 100%;">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Search Query" aria-label="Search Query" id="SearchQuery" style="width: 100%;" required>
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Mission Directorate" aria-label="Mission Directorate" id="missionDirectorate" style="width: 100%;">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Program" aria-label="Program" id="program" style="width: 100%;">
+        </div>
+        <div class="col">
+            <input type="text" class="form-control" placeholder="Title Search" aria-label="Title Search" id="titleSearch" style="width: 100%;">
+        </div>
+    </div>        
+    <div style="padding-top: 20px;"><button style="width: 15%; margin-left: 3%;"  id="search-techport" class="btn btn-outline-success btn-sm">Search</button></div> 
+    <hr>
+    <script src="/static/js/techport.js"></script>
+    <div id="results"></div>
 {% endblock %}
