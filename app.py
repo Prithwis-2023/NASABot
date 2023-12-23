@@ -85,5 +85,10 @@ def sbdb():
 def techport():
 	return render_template("techport.html")
 
+@app.route('/spectrum')
+
+def spectrum():
+	return render_template("spectrum.html")
+
 if __name__ == '__main__':
 	app.run(debug=True)

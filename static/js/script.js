@@ -40,6 +40,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         } else if (selectedValue === 'techport') {
             window.location.href = '/techport';
+        
+        } else if (selectedValue === 'spectrum') {
+            window.location.href = '/spectrum';
         }
     });
 });

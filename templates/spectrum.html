@@ -1,0 +1,554 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Spectrum
+{% endblock %}
+
+{% block main %}
+    <style>
+        .inputs {
+            
+            background-color: #1175A7;
+            text-align: left;
+            padding: 5px;
+            float:center;
+        }
+        
+        .full-width {
+            display:flex;
+            width:100%;
+            float:center;
+            transform: translateX(20%);
+        }
+    
+        /* The Modal (background) */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+
+        /* Modal Content/Box */
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+        }
+
+        /* The Close Button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    
+    </style>
+    <center>
+        <div id="controlBar" class="full-width">
+            <div id="continuousControl" class="inputs">
+                Continuous Spectrum <br>
+                <hr>
+                <input type="radio" id="visibleOff"  name="continuumType" value = "none" onclick="updateDisplay();" > None <br>
+                <input type="radio" id="visibleOn"  name="continuumType" value = "visible" onclick="updateDisplay();" checked> Visible <br>
+                <input type="radio" id="thermalOn"  name="continuumType" value = "thermal" onclick="updateDisplay();" > Thermal
+                <input type="text" id="temperatureDisplay" size="6" value="Error" readonly="true"> K<br>
+                <input id="temperatureSlider" type ="range" min="100" max="20000" step="10" value="Error" oninput="updateDisplay()"> <br>
+                <br>
+                <input type="text" id="speedDisplay" size="6" value="Error" readonly="true"> % of c<br>
+                <input type="text" id="speedDisplay2" size="8" value="Error" readonly="true"> km/s<br>
+                <input id="speedSlider" type ="range" min="-10" max="10" step="0.01" value="Error" oninput="updateDisplay()"> <br>
+
+            </div>
+            
+            <div id="emissionCheckboxes" class="inputs">
+                Emission Spectra <br>
+                <hr>
+                <input type="checkbox" id="HEmission" value="Hydrogen" onclick="updateDisplay();">Hydrogen <br>
+                <input type="checkbox" id="HeEmission" value="Helium" onclick="updateDisplay();">Helium <br>
+                <input type="checkbox" id="LiEmission" value="Lithium" onclick="updateDisplay();">Lithium <br>
+                <input type="checkbox" id="NaEmission" value="Sodium" onclick="updateDisplay();">Sodium <br>
+                <input type="checkbox" id="HgEmission" value="Mercury" onclick="updateDisplay();">Mercury <br>
+                <input type="checkbox" id="NeEmission" value="Neon" onclick="updateDisplay();">Neon
+            </div>
+
+            <div id="absorptionCheckboxes" class="inputs">
+                Absorption Spectra <br>
+                <hr>
+                <input type="checkbox" id="HAbsorption" value="Hydrogen" onclick="updateDisplay();">Hydrogen <br>
+                <input type="checkbox" id="HeAbsorption" value="Helium" onclick="updateDisplay();">Helium <br>
+                <input type="checkbox" id="LiAbsorption" value="Lithium" onclick="updateDisplay();">Lithium <br>
+                <input type="checkbox" id="NaAbsorption" value="Sodium" onclick="updateDisplay();">Sodium <br>
+                <input type="checkbox" id="HgAbsorption" value="Mercury" onclick="updateDisplay();">Mercury <br>
+                <input type="checkbox" id="NeAbsorption" value="Neon" onclick="updateDisplay();">Neon
+            </div>
+            
+            <div id="eyeballDirectView">
+                <center>Eyeball View</center> <br>
+                <canvas id="byEyeDisplay" width="150" height="150"></canvas>
+            </div>  
+        </div>
+        <hr style="width: 80%;">
+        <div id="diffractionGratingView" style="align-items: center;">
+            <canvas id="diffractionGratingDisplay" width="700" height="170"></canvas>
+        </div>
+        <hr style="width: 80%;">
+        <div id="spectrumPlot" style="width:700px;height:300px;">
+        </div>
+    </center>    
+    <script>
+
+        // define the canvas for showing the diffraction grating view
+        var canvasDiffGrat = document.getElementById("diffractionGratingDisplay");
+        var contextDiffGrat = canvasDiffGrat.getContext("2d");
+        var xBase = 50;     // left edge of spectra 
+        var yBase = 110;     // y base for the emission spectra
+
+        // define variables for thermal spectrum
+        var temperature = 5800;
+        document.getElementById("temperatureSlider").value = temperature;
+        document.getElementById("temperatureDisplay").value = temperature;
+
+        // define variables for line spectra
+        var lineData = initializeLineData();
+        var emissionOn = new Array();
+        var absorptionOn = new Array();
+        // set all elements to OFF for emission and absorption
+        for (var i = 0; i < lineData.length; i++) {
+            emissionOn[i] = 0;
+            absorptionOn[i] = 0;
+        }
+
+        // Initialize wavelength and brightness array
+        var wavelengths = [], waveMin = 300, waveMax = 800, brightness = [];
+        for (i=waveMin; i < waveMax+1; i++) {
+            wavelengths.push(i);
+            brightness.push(1);
+        }
+        console.log(wavelengths);
+        var shiftedWavelengths = wavelengths; 
+        
+        // initialize underlying data and the display
+        initializeDisplay();
+        updateDisplay();
+
+        
+        function initializeDisplay() {
+            // set background color for the entire thing
+            contextDiffGrat.fillStyle = "black";
+            contextDiffGrat.fillRect(0, 0, canvasDiffGrat.width, canvasDiffGrat.height);
+
+            contextDiffGrat.lineWidth = 2;
+            contextDiffGrat.strokeStyle  = "white";
+            contextDiffGrat.font = '14pt Calibri';
+            contextDiffGrat.fillStyle = "white";
+
+            // draw an axis
+            contextDiffGrat.beginPath();
+            contextDiffGrat.moveTo(xBase, yBase);
+            contextDiffGrat.lineTo(xBase+600, yBase);
+            contextDiffGrat.stroke();
+
+            // draw and label the tick marks
+            for (var i = 0; i <= 6; i++) {
+                contextDiffGrat.beginPath();
+                contextDiffGrat.moveTo(xBase+i*100, yBase);
+                contextDiffGrat.lineTo(xBase+i*100, yBase+10);
+                contextDiffGrat.stroke();
+                contextDiffGrat.textAlign = 'center';
+                contextDiffGrat.textBaseline = 'middle';
+                var axisValue = 400+50*i;
+                var axisLabel = axisValue.toFixed(0);
+                contextDiffGrat.fillText(axisLabel, xBase+i*100, yBase+20);
+            }
+            
+            contextDiffGrat.strokeStyle  = "white";
+            contextDiffGrat.font = '18pt Calibri';
+            contextDiffGrat.fillText("Diffraction grating view", 125, 15);
+
+            contextDiffGrat.strokeStyle  = "white";
+            contextDiffGrat.font = '18pt Calibri';
+            contextDiffGrat.fillText("Wavelength (nm)", 0.5*canvasDiffGrat.width, yBase+44);
+            
+            diffGratUpdate();
+            initializeStarGraphics();
+            initializePlot();
+    }
+        
+        function updateDisplay() {
+            // check what type of continuum to draw
+            var continuumType = document.querySelector('input[name="continuumType"]:checked').value;
+        
+            temperature = document.getElementById('temperatureSlider').value;
+            document.getElementById('temperatureDisplay').value = temperature;
+            
+            speed = document.getElementById('speedSlider').value;
+            document.getElementById('speedDisplay').value = speed;
+            document.getElementById('speedDisplay2').value = speed * 2.997e3;
+            
+        
+            // check to see which elements are selected for emission
+            if (document.getElementById("HEmission").checked == true) {emissionOn[0] = 1} else {emissionOn[0] = 0};
+            if (document.getElementById("HeEmission").checked == true) {emissionOn[1] = 1} else {emissionOn[1] = 0};
+            if (document.getElementById("LiEmission").checked == true) {emissionOn[2] = 1} else {emissionOn[2] = 0};
+            if (document.getElementById("NaEmission").checked == true) {emissionOn[3] = 1} else {emissionOn[3] = 0};
+            if (document.getElementById("HgEmission").checked == true) {emissionOn[4] = 1} else {emissionOn[4] = 0};
+            if (document.getElementById("NeEmission").checked == true) {emissionOn[5] = 1} else {emissionOn[5] = 0};
+        
+            // check to see which elements are selected for absorption
+            if (document.getElementById("HAbsorption").checked == true) {absorptionOn[0] = 1} else {absorptionOn[0] = 0};
+            if (document.getElementById("HeAbsorption").checked == true) {absorptionOn[1] = 1} else {absorptionOn[1] = 0};
+            if (document.getElementById("LiAbsorption").checked == true) {absorptionOn[2] = 1} else {absorptionOn[2] = 0};
+            if (document.getElementById("NaAbsorption").checked == true) {absorptionOn[3] = 1} else {absorptionOn[3] = 0};
+            if (document.getElementById("HgAbsorption").checked == true) {absorptionOn[4] = 1} else {absorptionOn[4] = 0};
+            if (document.getElementById("NeAbsorption").checked == true) {absorptionOn[5] = 1} else {absorptionOn[5] = 0};
+
+            // Reset wavelength and brightness array
+            wavelengths = []
+            for (i=waveMin; i < waveMax+1; i++) {
+                wavelengths.push(i);
+            }
+            
+            // set initial continuous spectrum
+            brightness = [];
+            //console.log(continuumType);
+            if (continuumType == 'none') {
+                for (i=waveMin; i <= waveMax; i++) {
+                    brightness.push(0);
+                }
+                document.getElementById("temperatureSlider").disabled = true;
+                document.getElementById("temperatureDisplay").disabled = true;
+            } else if (continuumType == 'thermal') {
+                document.getElementById("temperatureSlider").disabled = false;
+                document.getElementById("temperatureDisplay").disabled = false;
+                brightness = updatePlanck(temperature, wavelengths);
+            } else {
+                    for (i=waveMin; i <= waveMax; i++) {
+                    brightness.push(1);
+                } 
+                document.getElementById("temperatureSlider").disabled = true;
+                document.getElementById("temperatureDisplay").disabled = true;
+                }
+            var maxBrightness = Math.max(...brightness);  // ... is the spread operator
+            //console.log(maxBrightness);
+
+            
+            // add absorption
+            for (i=0; i < absorptionOn.length; i++) {
+                if (absorptionOn[i] == 1) {
+                    for (var j=0; j < lineData[i].wavelength.length; j++) {
+                        var lineWave = lineData[i].wavelength[j];
+                        var lineStrength = lineData[i].intensity[j];
+                        var minIndex = Math.max(Math.floor(lineWave - waveMin - 5), 0);
+                        var maxIndex = Math.min(Math.ceil(lineWave - waveMin + 5), wavelengths.length);
+                        var wavelengthSubset = wavelengths.slice(minIndex,maxIndex);
+                        var lineDepth = gaussian(wavelengthSubset, lineStrength, lineWave, 0.5);
+                        for (var k=0; k < wavelengthSubset.length; k++) {
+                            brightness[k+minIndex] = brightness[k+minIndex] * (1-lineDepth[k]);
+                        }
+                        //console.log(lineWave, lineStrength, wavelengthSubset, lineBrightness);
+                    }
+                }
+            }
+                
+            // add emission
+            for (i=0; i < emissionOn.length; i++) {
+                if (emissionOn[i] == 1) {
+                    for (var j=0; j < lineData[i].wavelength.length; j++) {
+                        var lineWave = lineData[i].wavelength[j];
+                        var lineStrength = lineData[i].intensity[j];
+                        var minIndex = Math.max(Math.floor(lineWave - waveMin - 5), 0);
+                        var maxIndex = Math.min(Math.ceil(lineWave - waveMin + 5), wavelengths.length);
+                        var wavelengthSubset = wavelengths.slice(minIndex,maxIndex);
+                        var lineBrightness = gaussian(wavelengthSubset, Math.max(maxBrightness,1)*lineStrength, lineWave, 0.5);
+                        for (var k=0; k < wavelengthSubset.length; k++) {
+                            brightness[k+minIndex] = brightness[k+minIndex] + lineBrightness[k];
+                        }
+                        //console.log(lineWave, lineStrength, wavelengthSubset, lineBrightness);
+                    }
+                }
+            }
+            
+            // apply doppler shift
+            shiftedWavelengths = DopplerShift(wavelengths, speed);
+                
+            // make plot
+            Plotly.react(plotter, [{x: shiftedWavelengths, y: brightness }], plotLayout );
+        
+            // make diffraction grating view
+            
+
+            // make eyeball view
+            starUpdate();
+            diffGratUpdate();
+            
+        }
+        
+        function initializePlot() {
+            // initialize plot
+            plotter = document.getElementById('spectrumPlot');
+            
+            plotLayout = {
+                margin: { t: 30, l:xBase, r:50 },
+                /*title: {
+                    text: '',
+                    font: {
+                            family: 'Calibri, monospace',
+                            size: 22,
+                            color: 'black'
+                    },
+                    x: 0.01,
+                    y: 1
+                },*/
+                xaxis: {
+                    range: [400, 700],
+                    fixedrange: true,
+                    title: {
+                        text: 'Wavelength (nm)',
+                        font: {
+                            family: 'Calibri, monospace',
+                            size: 18,
+                            color: 'black'
+                        },
+                        standoff: 10
+                    },
+                },
+                yaxis: {
+                    title: {
+                        text: 'Brightness',
+                        font: {
+                            family: 'Calibri, monospace',
+                            size: 18,
+                            color: 'black'
+                        }
+                    }
+                }
+            };
+
+            //Plotly.react( plotter, [{x: wavelengths, y: brightness }], {margin: { t: 0 } } );
+            Plotly.react( plotter, [{x: wavelengths, y: brightness }], plotLayout );
+        }
+        
+        function initializeStarGraphics() {
+            starCanvas = document.getElementById("byEyeDisplay");
+            starContext = starCanvas.getContext("2d");
+            starCenterX = starCanvas.width / 2;
+            starCenterY = starCanvas.height / 2;
+            radius = 0.9 * starCanvas.width / 2;
+
+            starContext.beginPath();
+            starContext.arc(starCenterX, starCenterY, radius, 0, 2 * Math.PI, false);
+            starContext.fillStyle = "red";
+            starUpdate();
+            starContext.fill();
+        }
+            
+        function starUpdate() {
+            
+            var maxBrightness = Math.max(...brightness);  // ... is the spread operator
+            var rSum = 0;
+            var gSum = 0;
+            var bSum = 0;
+            var brightSum = 0;
+            
+            for (var i = 0; i < shiftedWavelengths.length; i++) {
+                var newRGB = getLineColor(shiftedWavelengths[i], brightness[i]/maxBrightness);
+                rSum += newRGB[0];
+                gSum += newRGB[1];
+                bSum += newRGB[2];
+                brightSum += brightness[i]/maxBrightness;
+            }
+            
+            var brightest = Math.max(rSum, Math.max(gSum, bSum));
+            var r = rSum / brightest * 255 ;
+            var g = gSum / brightest * 255 ;
+            var b = bSum / brightest * 255 ;
+            if (maxBrightness == 0) {
+                r = 0;
+                g = 0;
+                b = 0;
+            }
+            starContext.fillStyle = "rgb("+r+","+g+","+b+")";            
+            starContext.fill();
+        }        
+        
+        function diffGratUpdate() {
+
+            contextDiffGrat.fillStyle = "black";
+            contextDiffGrat.fillRect(xBase, yBase,600, -80);
+            contextDiffGrat.lineWidth = 3;
+        
+            var maxBrightness = Math.max(...brightness);  // ... is the spread operator
+            
+            var index400 = indexOfClosestMatch(shiftedWavelengths, 400); 
+            var index700 = indexOfClosestMatch(shiftedWavelengths, 700);
+            console.log(index400, index700);
+            
+            for (var i = index400; i < index700; i++) {
+                var newRGB = getLineColor(shiftedWavelengths[i], brightness[i]/maxBrightness);
+                if (maxBrightness == 0) {newRGB = [0,0,0]};
+                contextDiffGrat.strokeStyle  = "rgb("+newRGB[0]+","+newRGB[1]+","+newRGB[2]+")";
+                contextDiffGrat.beginPath();
+                var xPosition = 2*(shiftedWavelengths[i] - 400)+xBase;
+                contextDiffGrat.moveTo(xPosition, yBase);
+                contextDiffGrat.lineTo(xPosition, yBase-80);
+                contextDiffGrat.stroke();
+            }
+        }
+        
+        function getLineColor(lambda, relativeIntensity=1) {
+            // original routine from Andrew Duffy, modified
+            // outputs a value from 0 to 255
+            
+            var redness = 0;
+            if ((lambda >= 400) && (lambda <= 500)) redness = Math.floor(160-160*(lambda-400)/100);
+            if ((lambda >= 558) && (lambda < 590)) redness = Math.floor(255-255*(590-lambda)*(590-lambda)/(32*32));
+            if ((lambda >= 590) && (lambda < 650)) redness = 255;
+            if ((lambda >= 650) && (lambda <= 700)) redness = Math.floor(255-2*(lambda-650));
+            redness = Math.floor(relativeIntensity * redness);
+
+            var greenness = 0;
+            if ((lambda > 460) && (lambda < 500)) greenness = Math.floor(255 - 255*(500 - lambda)*(500-lambda)/1600);
+            if ((lambda >= 500) && (lambda <=  570))    greenness = 255;
+            if ((lambda > 570) && (lambda <=  640))    greenness = Math.floor(255-255*(lambda-570)*(lambda-570)/(70*70));
+            greenness = Math.floor(relativeIntensity * greenness);
+
+            var blueness = 0;
+            if ((lambda >= 400) && (lambda < 460)) blueness = 255;
+            if ((lambda >= 460) && (lambda < 550)) blueness = Math.floor(255 - 255*(lambda-460)*(lambda-460)/(90*90));
+            blueness = Math.floor(relativeIntensity * blueness);
+
+            return [redness, greenness, blueness];
+        }
+
+        function lineColorToString(RGB) {
+            // converts RGB array of values from 0 to 255 to string format
+            var redness = RGB[0];
+            var redString = redness.toString(16);
+            if (redString.length == 1) redString = "0"+redString;
+            var greenness = RGB[1];
+            var greenString = greenness.toString(16);
+            if (greenString.length == 1) greenString = "0"+greenString;
+            var blueness = RGB[2];
+            var blueString = blueness.toString(16);
+            if (blueString.length == 1) blueString = "0"+blueString;
+            var newlineColor = "#" + redString+greenString+blueString;
+            return newlineColor;
+        }
+        
+        function PlanckFunction(temperature, wavelength) {
+            //  CALCULATE PLANCK FUNCTION at a single wavelength
+            //  outputs W / steradian / m2 / m
+            //  divide by 1e12 to get kW / sr / m2 / nm
+            var h = 6.626e-34; // m2 kg / s
+            var c = 2.997e8; // m/s, speed of light
+            var kb = 1.38e-23; // m2kg /s2 / K  Boltzmann constant
+
+            return ((2 * h * c*c) / 
+                Math.pow(wavelength * 1e-9,5) / 
+                (Math.exp( h*c / (wavelength * 1e-9 * kb * temperature)) - 1));
+        }
+        
+        function updatePlanck(T, lambdas) {
+            var B = [];
+            for (i=0; i < lambdas.length; i++) {
+                B.push(PlanckFunction(T, lambdas[i]))
+            }
+            return B;
+        }
+
+        function gaussian(xs, height, center, spread) {
+            var ys = [];
+            for (var i = 0; i < xs.length; i++) {
+                ys.push(height * Math.exp(-1.0 * Math.pow((xs[i] - center),2) / (2 * Math.pow(spread,2))));
+            }
+            //console.log(xs, height, center, spread, ys);
+            return ys;
+        }
+        
+        function indexOfClosestMatch(arr, matchValue) {
+            if (arr.length === 0) {
+                return -1;
+            }
+            var matchDistance = Math.abs(arr[0]-matchValue);
+            var matchIndex = 0;
+            
+            for (var i = 1; i < arr.length; i++) {
+                if (Math.abs(arr[i]-matchValue) < matchDistance) {
+                    matchIndex = i;
+                    matchDistance = Math.abs(arr[i]-matchValue);
+                }
+            }
+            return matchIndex;
+        }
+        
+        function DopplerShift(wavelengths, speed) {
+            var shiftedWavelengths = [];
+            for (var i = 0; i < wavelengths.length; i++) {
+                shiftedWavelengths.push(wavelengths[i]* (1+speed/100));
+            }
+            return shiftedWavelengths;
+        }
+                
+        function initializeLineData(){
+            var spectrumData = new Array();
+
+            var tempSpectrum = {};
+            tempSpectrum.name = "Hydrogen";
+            tempSpectrum.wavelength = [410.2, 434.0, 486.1, 656.3];
+            tempSpectrum.intensity = [0.25, 0.35, 0.5, 1];
+            spectrumData.push(tempSpectrum);
+        
+            tempSpectrum = {};
+            tempSpectrum.name = "Helium";
+            tempSpectrum.wavelength = [447.1, 471.3, 492.2, 501.6, 587.6, 667.8];
+            tempSpectrum.intensity = [0.75, 0.20, 0.25, 0.65, 1, 1];
+            spectrumData.push(tempSpectrum);
+
+            tempSpectrum = {};
+            tempSpectrum.name= "Lithium";
+            tempSpectrum.wavelength= [468, 479, 548.4, 610.3, 670.8];
+            tempSpectrum.intensity = [0.1, 0.1, 0.1, 0.5, 1];
+            spectrumData.push(tempSpectrum);
+
+            tempSpectrum = {};
+            tempSpectrum.name= "Sodium";
+            tempSpectrum.wavelength= [439.3, 445.5, 449.1, 589, 589.6];
+            tempSpectrum.intensity = [0.1, 0.1, 0.1, 1, 1];
+            spectrumData.push(tempSpectrum);
+
+            tempSpectrum = {};
+            tempSpectrum.name= "Mercury";
+            tempSpectrum.wavelength = [404.7, 435.8, 546.1, 577, 579.1];
+            tempSpectrum.intensity = [0.75, 1, 1, 0.5, 0.5];
+            spectrumData.push(tempSpectrum);
+
+            tempSpectrum = {};
+            tempSpectrum.name= "Neon";
+            tempSpectrum.wavelength= [540.1, 585.2, 588.2, 603, 607.4, 616.4, 621.7, 626.6, 633.4, 638.3, 640.2, 650.6, 659.9, 692.9];
+            tempSpectrum.intensity = [0.05, 0.5, 0.25, 0.25, 0.5, 0.75, 0.25, 0.25, 0.25, 0.25, 0.25, 1, 0.5, 0.5];
+            spectrumData.push(tempSpectrum);
+        
+            // to add more elements, just copy one of the blocks from above, update i, name, and wavelengths
+
+            return spectrumData;
+        }
+
+    </script>
+{% endblock %}
