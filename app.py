@@ -88,5 +88,9 @@ def techport():
 def spectrum():
 	return render_template("spectrum.html")
 
+@app.route('/acknowledgement')
+def acknowledgement():
+	return render_template("acknowledgements.html")
+
 if __name__ == '__main__':
 	app.run(debug=True)

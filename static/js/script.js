@@ -44,5 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
         } else if (selectedValue === 'spectrum') {
             window.location.href = '/spectrum';
         }
+        
     });
 });

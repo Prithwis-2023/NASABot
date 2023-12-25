@@ -18,7 +18,7 @@
             display:flex;
             width:100%;
             float:center;
-            transform: translateX(20%);
+            transform: translateX(19%);
         }
     
         /* The Modal (background) */
@@ -62,24 +62,22 @@
     </style>
     <center>
         <div id="controlBar" class="full-width">
-            <div id="continuousControl" class="inputs">
-                Continuous Spectrum <br>
-                <hr>
+            <div id="continuousControl" class="text-bg-success mb-3" style="text-align: left; padding: 5px; float: center;">
+                <div class="card-header">Continuous Spectrum</div><br>
                 <input type="radio" id="visibleOff"  name="continuumType" value = "none" onclick="updateDisplay();" > None <br>
                 <input type="radio" id="visibleOn"  name="continuumType" value = "visible" onclick="updateDisplay();" checked> Visible <br>
                 <input type="radio" id="thermalOn"  name="continuumType" value = "thermal" onclick="updateDisplay();" > Thermal
                 <input type="text" id="temperatureDisplay" size="6" value="Error" readonly="true"> K<br>
-                <input id="temperatureSlider" type ="range" min="100" max="20000" step="10" value="Error" oninput="updateDisplay()"> <br>
+                <input id="temperatureSlider" type="range" class="form-range" min="100" max="20000" step="10" value="Error" oninput="updateDisplay()"> <br>
                 <br>
                 <input type="text" id="speedDisplay" size="6" value="Error" readonly="true"> % of c<br>
                 <input type="text" id="speedDisplay2" size="8" value="Error" readonly="true"> km/s<br>
-                <input id="speedSlider" type ="range" min="-10" max="10" step="0.01" value="Error" oninput="updateDisplay()"> <br>
+                <input id="speedSlider" type ="range" class="form-range" min="-10" max="10" step="0.01" value="Error" oninput="updateDisplay()"> <br>
 
             </div>
             
-            <div id="emissionCheckboxes" class="inputs">
-                Emission Spectra <br>
-                <hr>
+            <div id="emissionCheckboxes" class="text-bg-success mb-3" style="text-align: left; padding: 5px; float: center;">
+                <div class="card-header">Emission Spectra</div><br>
                 <input type="checkbox" id="HEmission" value="Hydrogen" onclick="updateDisplay();">Hydrogen <br>
                 <input type="checkbox" id="HeEmission" value="Helium" onclick="updateDisplay();">Helium <br>
                 <input type="checkbox" id="LiEmission" value="Lithium" onclick="updateDisplay();">Lithium <br>
@@ -88,9 +86,8 @@
                 <input type="checkbox" id="NeEmission" value="Neon" onclick="updateDisplay();">Neon
             </div>
 
-            <div id="absorptionCheckboxes" class="inputs">
-                Absorption Spectra <br>
-                <hr>
+            <div id="absorptionCheckboxes" class="text-bg-success mb-3" style="text-align: left; padding: 5px; float: center;">
+                <div class="card-header">Absorption Spectra</div><br>
                 <input type="checkbox" id="HAbsorption" value="Hydrogen" onclick="updateDisplay();">Hydrogen <br>
                 <input type="checkbox" id="HeAbsorption" value="Helium" onclick="updateDisplay();">Helium <br>
                 <input type="checkbox" id="LiAbsorption" value="Lithium" onclick="updateDisplay();">Lithium <br>
@@ -111,7 +108,8 @@
         <hr style="width: 80%;">
         <div id="spectrumPlot" style="width:700px;height:300px;">
         </div>
-    </center>    
+    </center>  
+
     <script>
 
         // define the canvas for showing the diffraction grating view
