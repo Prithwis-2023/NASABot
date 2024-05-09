@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Get the value from the textbox
         var prompt = document.getElementById("exampleFormControlTextarea1").value;
 
-        const API_KEY = 'AIzaSyDhURas96RlzIs84VD_r9b6NWeV_fR0SHo';
+        const API_KEY = GOOGLE_API_KEY;
         const genAI = new GoogleGenerativeAI(API_KEY);
         var res;
         async function run() {
