@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Aladin Sky Atlas
+{% endblock %}
+
+{% block main %}
+   <div id="aladin-lite-div" style="width: 100%; height: 500px"></div>
+    <script type="text/javascript" src="https://aladin.cds.unistra.fr/AladinLite/api/v3/latest/aladin.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        let aladin;
+        A.init.then(() => {
+            aladin = A.aladin('#aladin-lite-div', {fov: 360, projection: "AIT", cooFrame: 'equatorial', showCooGridControl: true, showSimbadPointerControl: true, showCooGrid: true});
+        });
+    </script>
+{% endblock %}

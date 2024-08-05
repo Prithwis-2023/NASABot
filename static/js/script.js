@@ -43,6 +43,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         } else if (selectedValue === 'spectrum') {
             window.location.href = '/spectrum';
+        
+        } else if (selectedValue === 'aladin') {
+            window.location.href = '/aladin';
         }
         
     });

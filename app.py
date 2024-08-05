@@ -92,5 +92,9 @@ def spectrum():
 def acknowledgement():
 	return render_template("acknowledgements.html")
 
+@app.route ('/aladin')
+def aladin():
+	return render_template("aladin.html")
+
 if __name__ == '__main__':
 	app.run(debug=True)
